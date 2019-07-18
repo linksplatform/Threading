@@ -1,4 +1,4 @@
-﻿namespace Platform.Threading.Synchronization.Synchronization
+﻿namespace Platform.Threading.Synchronization
 {
     /// <summary>
     /// Represents extendable sychronized interface access gate.
