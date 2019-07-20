@@ -9,7 +9,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Platform.Threading</AssemblyName>
     <PackageId>Platform.Threading</PackageId>
-    <PackageTags>LinksPlatform;Threading;Extensions;Arrays;Lists;Concurrent;Segments;SegmentWalkers;Stacks;Strings</PackageTags>
+    <PackageTags>LinksPlatform;Threading;ISynchronization;TaskExtensions;ThreadHelpers</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/0a9177c11892ebb2fe467dc3ea9eaf5a5588f610/doc/Avatar-rainbow.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/linksplatform/Threading</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/linksplatform/Threading/blob/master/LICENSE</PackageLicenseUrl>
