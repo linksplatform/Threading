@@ -3,9 +3,6 @@ using System.Threading;
 
 namespace Platform.Threading.Synchronization
 {
-    /// <summary>
-    /// TODO: Сравнить что производительнее использовать анонимную функцию или using (создание объекта + dispose)
-    /// </summary>
     public class ReaderWriterLockSynchronization : ISynchronization
     {
         private readonly ReaderWriterLockSlim _rwLock = new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);

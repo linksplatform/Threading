@@ -10,13 +10,17 @@ namespace Platform.Threading
         public static async Task AwaitAll(this ConcurrentQueue<Task> queue)
         {
             foreach (var item in queue.DequeueAll())
+            {
                 await item;
+            }
         }
 
         public static async Task AwaitOne(this ConcurrentQueue<Task> queue)
         {
             if (queue.TryDequeue(out Task item))
+            {
                 await item;
+            }
         }
 
         public static void EnqueueAsRunnedTask(this ConcurrentQueue<Task> queue, Action action) => queue.Enqueue(Task.Run(action));

@@ -1,10 +1,11 @@
 ﻿namespace Platform.Threading.Synchronization
 {
     /// <summary>
-    /// Represents extendable sychronized interface access gate.
+    /// Represents extendable synchronized interface access gate.
+    /// Представляет расширяемый интерфейс шлюза синхронизированного доступа.
     /// </summary>
-    /// <typeparam name="TInterface">Sychronized interface.</typeparam>
-    public interface ISynchronized<TInterface>
+    /// <typeparam name="TInterface">Synchronized interface. Синхронизируемый интерфейс.</typeparam>
+    public interface ISynchronized<out TInterface>
     {
         /// <summary>
         /// Gets sychronization method.

@@ -5,22 +5,30 @@ namespace Platform.Threading
 {
     public static class ThreadHelpers
     {
-        public const int DefaultMaxStackSize = 0;
-        public const int DefaultSleepTimeout = 1;
-        public const int ExtendedMaxStackSize = 200 * 1024 * 1024;
+        public static readonly int DefaultMaxStackSize = 0;
+        public static readonly int ExtendedMaxStackSize = 200 * 1024 * 1024;
+        public static readonly int DefaultSleepTimeout = 1;
 
-        public static void SyncInvokeWithExtendedStack<T>(T param, Action<object> action, int maxStackSize = ExtendedMaxStackSize) => StartNew(param, action, maxStackSize).Join();
+        public static void SyncInvokeWithExtendedStack<T>(T param, Action<object> action) => SyncInvokeWithExtendedStack(param, action, ExtendedMaxStackSize);
 
-        public static void SyncInvokeWithExtendedStack(Action action, int maxStackSize = ExtendedMaxStackSize) => StartNew(action, maxStackSize).Join();
+        public static void SyncInvokeWithExtendedStack<T>(T param, Action<object> action, int maxStackSize) => StartNew(param, action, maxStackSize).Join();
 
-        public static Thread StartNew<T>(T param, Action<object> action, int maxStackSize = DefaultMaxStackSize)
+        public static void SyncInvokeWithExtendedStack(Action action) => SyncInvokeWithExtendedStack(action, ExtendedMaxStackSize);
+
+        public static void SyncInvokeWithExtendedStack(Action action, int maxStackSize) => StartNew(action, maxStackSize).Join();
+
+        public static Thread StartNew<T>(T param, Action<object> action) => StartNew(param, action, DefaultMaxStackSize);
+
+        public static Thread StartNew<T>(T param, Action<object> action, int maxStackSize)
         {
             var thread = new Thread(new ParameterizedThreadStart(action), maxStackSize);
             thread.Start(param);
             return thread;
         }
 
-        public static Thread StartNew(Action action, int maxStackSize = DefaultMaxStackSize)
+        public static Thread StartNew(Action action) => StartNew(action, DefaultMaxStackSize);
+
+        public static Thread StartNew(Action action, int maxStackSize)
         {
             var thread = new Thread(new ThreadStart(action), maxStackSize);
             thread.Start();

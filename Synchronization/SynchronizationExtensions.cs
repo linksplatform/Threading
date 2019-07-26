@@ -2,9 +2,6 @@
 
 namespace Platform.Threading.Synchronization
 {
-    /// <remarks>
-    /// TODO: Избавиться от анонимных функций передаваемых в ExecuteReadOperation и ExecureWriteOperation
-    /// </remarks>
     public static class SynchronizationExtensions
     {
         public static TResult ExecuteReadOperation<TResult, TParam>(this ISynchronization synchronization, TParam parameter, Func<TParam, TResult> function) => synchronization.ExecuteReadOperation(() => function(parameter));

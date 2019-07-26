@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Threading Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Threading</AssemblyTitle>
-    <VersionPrefix>0.0.3</VersionPrefix>
+    <VersionPrefix>0.0.4</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Platform.Threading</AssemblyName>
@@ -21,6 +21,8 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReleaseNotes>Platform.Collections updated to 0.0.3 version.
+Refactoring.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
