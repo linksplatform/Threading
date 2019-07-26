@@ -5,7 +5,7 @@ namespace Platform.Threading
 {
     public static class ThreadHelpers
     {
-        public static readonly int DefaultMaxStackSize = 0;
+        public static readonly int DefaultMaxStackSize;
         public static readonly int ExtendedMaxStackSize = 200 * 1024 * 1024;
         public static readonly int DefaultSleepTimeout = 1;
 
