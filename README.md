@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/99a13a9e8f434d4caf32659a09bba50a)](https://app.codacy.com/app/drakonard/Threading?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Threading&utm_campaign=Badge_Grade_Dashboard)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/threading/badge)](https://www.codefactor.io/repository/github/linksplatform/threading)
 
 # Threading
