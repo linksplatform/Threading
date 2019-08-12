@@ -1,14 +1,22 @@
 ﻿using System;
 
-#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
-
 namespace Platform.Threading.Synchronization
 {
+    /// <summary>
+    /// Implementation of <see cref="ISynchronization"/> that makes no actual synchronization.
+    /// </summary>
     public class Unsynchronization : ISynchronization
     {
+        /// <include file='bin\Release\netstandard2.0\Documentation.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation(System.Action)"]/*'/>
         public void ExecuteReadOperation(Action action) => action();
-        public T ExecuteReadOperation<T>(Func<T> func) => func();
+
+        /// <include file='bin\Release\netstandard2.0\Documentation.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation``1(System.Func{``0})"]/*'/>
+        public TResult ExecuteReadOperation<TResult>(Func<TResult> function) => function();
+
+        /// <include file='bin\Release\netstandard2.0\Documentation.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation(System.Action)"]/*'/>
         public void ExecuteWriteOperation(Action action) => action();
-        public T ExecuteWriteOperation<T>(Func<T> func) => func();
+
+        /// <include file='bin\Release\netstandard2.0\Documentation.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation``1(System.Func{``0})"]/*'/>
+        public TResult ExecuteWriteOperation<TResult>(Func<TResult> function) => function();
     }
 }

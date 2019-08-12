@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Threading;
 
-#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
-
 namespace Platform.Threading.Synchronization
 {
+    /// <summary>
+    /// Implementation of <see cref="ISynchronization"/> based on <see cref="ReaderWriterLockSlim"/>.
+    /// </summary>
     public class ReaderWriterLockSynchronization : ISynchronization
     {
         private readonly ReaderWriterLockSlim _rwLock = new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);
 
+        /// <include file='bin\Release\netstandard2.0\Documentation.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation(System.Action)"]/*'/>
         public void ExecuteReadOperation(Action action)
         {
             _rwLock.EnterReadLock();
@@ -22,12 +24,13 @@ namespace Platform.Threading.Synchronization
             }
         }
 
-        public T ExecuteReadOperation<T>(Func<T> func)
+        /// <include file='bin\Release\netstandard2.0\Documentation.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation``1(System.Func{``0})"]/*'/>
+        public TResult ExecuteReadOperation<TResult>(Func<TResult> function)
         {
             _rwLock.EnterReadLock();
             try
             {
-                return func();
+                return function();
             }
             finally
             {
@@ -35,6 +38,7 @@ namespace Platform.Threading.Synchronization
             }
         }
 
+        /// <include file='bin\Release\netstandard2.0\Documentation.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation(System.Action)"]/*'/>
         public void ExecuteWriteOperation(Action action)
         {
             _rwLock.EnterWriteLock();
@@ -48,12 +52,13 @@ namespace Platform.Threading.Synchronization
             }
         }
 
-        public T ExecuteWriteOperation<T>(Func<T> func)
+        /// <include file='bin\Release\netstandard2.0\Documentation.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation``1(System.Func{``0})"]/*'/>
+        public TResult ExecuteWriteOperation<TResult>(Func<TResult> function)
         {
             _rwLock.EnterWriteLock();
             try
             {
-                return func();
+                return function();
             }
             finally
             {
