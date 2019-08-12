@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading;
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+
 namespace Platform.Threading
 {
     public static class ThreadHelpers
