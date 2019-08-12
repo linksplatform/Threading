@@ -2,7 +2,7 @@
 
 namespace Platform.Threading.Synchronization
 {
-    public static class SynchronizationExtensions
+    public static class ISynchronizationExtensions
     {
         public static TResult ExecuteReadOperation<TResult, TParam>(this ISynchronization synchronization, TParam parameter, Func<TParam, TResult> function) => synchronization.ExecuteReadOperation(() => function(parameter));
         public static void ExecuteReadOperation<TParam>(this ISynchronization synchronization, TParam parameter, Action<TParam> action) => synchronization.ExecuteReadOperation(() => action(parameter));
