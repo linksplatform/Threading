@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Threading Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Threading</AssemblyTitle>
-    <VersionPrefix>0.0.4</VersionPrefix>
+    <VersionPrefix>0.0.5</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Platform.Threading</AssemblyName>
@@ -21,8 +21,12 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageReleaseNotes>Platform.Collections updated to 0.0.3 version.
-Refactoring.</PackageReleaseNotes>
+    <PackageReleaseNotes>Platform.Collections dependency updated from 0.0.3 to 0.0.4.
+SynchronizationExtensions class renamed to ISynchronizationExtensions.
+XML documentation file generation turned on.
+Added code comments.
+Travis CI connected.
+Refactoring, issues fix.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
