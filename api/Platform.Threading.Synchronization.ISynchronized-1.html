@@ -83,7 +83,9 @@
   
   <h1 id="Platform_Threading_Synchronization_ISynchronized_1" data-uid="Platform.Threading.Synchronization.ISynchronized`1" class="text-break">Interface ISynchronized&lt;TInterface&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents extendable synchronized interface access gate.</p>
+<p>Представляет расширяемый интерфейс шлюза синхронизированного доступа.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Platform.Threading.Synchronization.html">Platform.Threading.Synchronization</a></h6>
   <h6><strong>Assembly</strong>: Platform.Threading.dll</h6>
@@ -102,7 +104,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TInterface</span></td>
-        <td></td>
+        <td><p>Synchronized interface.</p><p>Синхронизируемый интерфейс.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -112,7 +115,9 @@
   
   <a id="Platform_Threading_Synchronization_ISynchronized_1_Sync_" data-uid="Platform.Threading.Synchronization.ISynchronized`1.Sync*"></a>
   <h4 id="Platform_Threading_Synchronization_ISynchronized_1_Sync" data-uid="Platform.Threading.Synchronization.ISynchronized`1.Sync">Sync</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get wrapped/decorated version of <code data-dev-comment-type="typeparamref" class="typeparamref">TInterface</code>, that does garantee thread safe access synchronization.</p>
+<p>Возвращает обернутую/декорированную версию <code data-dev-comment-type="typeparamref" class="typeparamref">TInterface</code>, которая гарантирует потокобезопасную синхронизацию доступа.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -133,11 +138,17 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Platform_Threading_Synchronization_ISynchronized_1_Sync_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is safe to use it directly, because it must be thread safe implementation.</p>
+<p>Безопасно использовать напрямую, так как реализация должна быть потокобезопасной.</p>
+</div>
   
   
   <a id="Platform_Threading_Synchronization_ISynchronized_1_SyncRoot_" data-uid="Platform.Threading.Synchronization.ISynchronized`1.SyncRoot*"></a>
   <h4 id="Platform_Threading_Synchronization_ISynchronized_1_SyncRoot" data-uid="Platform.Threading.Synchronization.ISynchronized`1.SyncRoot">SyncRoot</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets sychronization method.</p>  
+<p>Возвращает способ синхронизации.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -162,7 +173,9 @@
   
   <a id="Platform_Threading_Synchronization_ISynchronized_1_Unsync_" data-uid="Platform.Threading.Synchronization.ISynchronized`1.Unsync*"></a>
   <h4 id="Platform_Threading_Synchronization_ISynchronized_1_Unsync" data-uid="Platform.Threading.Synchronization.ISynchronized`1.Unsync">Unsync</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get source version of <code data-dev-comment-type="typeparamref" class="typeparamref">TInterface</code>, that does not garantee thread safe access synchronization.</p>
+<p>Возвращает исходную версию <code data-dev-comment-type="typeparamref" class="typeparamref">TInterface</code>, которая не гарантирует потокобезопасную синхронизацию доступа.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -183,6 +196,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Platform_Threading_Synchronization_ISynchronized_1_Unsync_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is unsafe to use it directly, unless compound context using SyncRoot is created.</p>
+<p>Использовать напрямую небезопасно, за исключением ситуации когда создаётся составной контекст с использованием SyncRoot.</p>
+</div>
 </article>
           </div>
           
