@@ -1,13 +1,7 @@
 {
   "metadata": [
     {
-      "src": [
-        {
-          "files": [ "**/*.sln" ],
-          "exclude": [ "**/bin/**", "**/obj/**" ],
-          "src": ""
-        }
-      ],
+      "src": "bin/Release/netstandard2.0/Platform.$TRAVIS_REPO_NAME.dll",
       "dest": "obj/api"
     }
   ],
