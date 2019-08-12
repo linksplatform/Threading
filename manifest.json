@@ -1,0 +1,224 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/travis/build/linksplatform/Threading",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "NFTFxDfVyLaHRYXIDEcHMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.ConcurrentQueueExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.ConcurrentQueueExtensions.html",
+          "hash": "5BRb3ISrSG4nDUmKopKsQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.ISynchronization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.ISynchronization.html",
+          "hash": "2uCMJzoec4+rOcqrWPYt6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.ISynchronizationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.ISynchronizationExtensions.html",
+          "hash": "ioVOi9/TW6VMyTGj8T2/dQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.ISynchronized-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.ISynchronized-1.html",
+          "hash": "CxbZbfKMKjlYeaurcmmrwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html",
+          "hash": "nOg3YprDBN/mLEMDHYMiLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.Unsynchronization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.Unsynchronization.html",
+          "hash": "UXh8X7QoFIrwkCDby3fDrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.html",
+          "hash": "4ZOwo+G1G5WnthgTqb0sig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.TaskExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.TaskExtensions.html",
+          "hash": "rZOnQa7ix7aj16LDOO2KLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.ThreadHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.ThreadHelpers.html",
+          "hash": "7JWgb8Om3ZSqttHh2an7lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.html",
+          "hash": "QI8uI3nWOGifEKiMz4KdFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "iMCBXota5ASY0oHie7lnZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "MJAOQizQlPb/JK3eKqvl7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
