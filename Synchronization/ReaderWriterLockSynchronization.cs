@@ -4,7 +4,8 @@ using System.Threading;
 namespace Platform.Threading.Synchronization
 {
     /// <summary>
-    /// Implementation of <see cref="ISynchronization"/> based on <see cref="ReaderWriterLockSlim"/>.
+    /// <para>Implementation of <see cref="ISynchronization"/> based on <see cref="ReaderWriterLockSlim"/>.</para>
+    /// <para>Реализация <see cref="ISynchronization"/> на основе <see cref="ReaderWriterLockSlim"/>.</para>
     /// </summary>
     public class ReaderWriterLockSynchronization : ISynchronization
     {

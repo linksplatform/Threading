@@ -3,7 +3,8 @@
 namespace Platform.Threading.Synchronization
 {
     /// <summary>
-    /// Implementation of <see cref="ISynchronization"/> that makes no actual synchronization.
+    /// <para>Implementation of <see cref="ISynchronization"/> that makes no actual synchronization.</para>
+    /// <para>Реализация <see cref="ISynchronization"/>, которая не выполняет фактическую синхронизацию.</para>
     /// </summary>
     public class Unsynchronization : ISynchronization
     {
