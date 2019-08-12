@@ -8,6 +8,5 @@ before_install:
 script:
   - dotnet build -c Release
 after_success:
-  - dotnet build -c Release
   - bash ./generate-pdf.sh
   - bash ./publish-docs.sh
