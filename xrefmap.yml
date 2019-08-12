@@ -26,6 +26,7 @@ references:
   name: AwaitAll
   href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_AwaitAll_
   commentId: Overload:Platform.Threading.ConcurrentQueueExtensions.AwaitAll
+  isSpec: "True"
   fullName: Platform.Threading.ConcurrentQueueExtensions.AwaitAll
   nameWithType: ConcurrentQueueExtensions.AwaitAll
 - uid: Platform.Threading.ConcurrentQueueExtensions.AwaitOne(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task})
@@ -41,6 +42,7 @@ references:
   name: AwaitOne
   href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_AwaitOne_
   commentId: Overload:Platform.Threading.ConcurrentQueueExtensions.AwaitOne
+  isSpec: "True"
   fullName: Platform.Threading.ConcurrentQueueExtensions.AwaitOne
   nameWithType: ConcurrentQueueExtensions.AwaitOne
 - uid: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task},System.Action)
@@ -56,6 +58,7 @@ references:
   name: EnqueueAsRunnedTask
   href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_EnqueueAsRunnedTask_
   commentId: Overload:Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask
+  isSpec: "True"
   fullName: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask
   nameWithType: ConcurrentQueueExtensions.EnqueueAsRunnedTask
 - uid: Platform.Threading.Synchronization
@@ -80,6 +83,7 @@ references:
   name: ExecuteReadOperation
   href: api/Platform.Threading.Synchronization.ISynchronization.html#Platform_Threading_Synchronization_ISynchronization_ExecuteReadOperation_
   commentId: Overload:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation
   nameWithType: ISynchronization.ExecuteReadOperation
 - uid: Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation``1(System.Func{``0})
@@ -101,6 +105,7 @@ references:
   name: ExecuteWriteOperation
   href: api/Platform.Threading.Synchronization.ISynchronization.html#Platform_Threading_Synchronization_ISynchronization_ExecuteWriteOperation_
   commentId: Overload:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation
   nameWithType: ISynchronization.ExecuteWriteOperation
 - uid: Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation``1(System.Func{``0})
@@ -122,6 +127,7 @@ references:
   name: ExecuteReadOperation
   href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteReadOperation_
   commentId: Overload:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation
   nameWithType: ISynchronizationExtensions.ExecuteReadOperation
 - uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``1(Platform.Threading.Synchronization.ISynchronization,``0,System.Action{``0})
@@ -200,6 +206,7 @@ references:
   name: ExecuteWriteOperation
   href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteWriteOperation_
   commentId: Overload:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation
   nameWithType: ISynchronizationExtensions.ExecuteWriteOperation
 - uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``1(Platform.Threading.Synchronization.ISynchronization,``0,System.Action{``0})
@@ -295,6 +302,7 @@ references:
   name: Sync
   href: api/Platform.Threading.Synchronization.ISynchronized-1.html#Platform_Threading_Synchronization_ISynchronized_1_Sync_
   commentId: Overload:Platform.Threading.Synchronization.ISynchronized`1.Sync
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.ISynchronized<TInterface>.Sync
   fullName.vb: Platform.Threading.Synchronization.ISynchronized(Of TInterface).Sync
   nameWithType: ISynchronized<TInterface>.Sync
@@ -311,6 +319,7 @@ references:
   name: SyncRoot
   href: api/Platform.Threading.Synchronization.ISynchronized-1.html#Platform_Threading_Synchronization_ISynchronized_1_SyncRoot_
   commentId: Overload:Platform.Threading.Synchronization.ISynchronized`1.SyncRoot
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.ISynchronized<TInterface>.SyncRoot
   fullName.vb: Platform.Threading.Synchronization.ISynchronized(Of TInterface).SyncRoot
   nameWithType: ISynchronized<TInterface>.SyncRoot
@@ -327,6 +336,7 @@ references:
   name: Unsync
   href: api/Platform.Threading.Synchronization.ISynchronized-1.html#Platform_Threading_Synchronization_ISynchronized_1_Unsync_
   commentId: Overload:Platform.Threading.Synchronization.ISynchronized`1.Unsync
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.ISynchronized<TInterface>.Unsync
   fullName.vb: Platform.Threading.Synchronization.ISynchronized(Of TInterface).Unsync
   nameWithType: ISynchronized<TInterface>.Unsync
@@ -337,18 +347,6 @@ references:
   commentId: T:Platform.Threading.Synchronization.ReaderWriterLockSynchronization
   fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization
   nameWithType: ReaderWriterLockSynchronization
-- uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.#ctor
-  name: ReaderWriterLockSynchronization()
-  href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization__ctor
-  commentId: M:Platform.Threading.Synchronization.ReaderWriterLockSynchronization.#ctor
-  fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ReaderWriterLockSynchronization()
-  nameWithType: ReaderWriterLockSynchronization.ReaderWriterLockSynchronization()
-- uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.#ctor*
-  name: ReaderWriterLockSynchronization
-  href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization__ctor_
-  commentId: Overload:Platform.Threading.Synchronization.ReaderWriterLockSynchronization.#ctor
-  fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ReaderWriterLockSynchronization
-  nameWithType: ReaderWriterLockSynchronization.ReaderWriterLockSynchronization
 - uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation(System.Action)
   name: ExecuteReadOperation(Action)
   href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization_ExecuteReadOperation_System_Action_
@@ -359,6 +357,7 @@ references:
   name: ExecuteReadOperation
   href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization_ExecuteReadOperation_
   commentId: Overload:Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation
   nameWithType: ReaderWriterLockSynchronization.ExecuteReadOperation
 - uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation``1(System.Func{``0})
@@ -380,6 +379,7 @@ references:
   name: ExecuteWriteOperation
   href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization_ExecuteWriteOperation_
   commentId: Overload:Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation
   nameWithType: ReaderWriterLockSynchronization.ExecuteWriteOperation
 - uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation``1(System.Func{``0})
@@ -397,18 +397,6 @@ references:
   commentId: T:Platform.Threading.Synchronization.Unsynchronization
   fullName: Platform.Threading.Synchronization.Unsynchronization
   nameWithType: Unsynchronization
-- uid: Platform.Threading.Synchronization.Unsynchronization.#ctor
-  name: Unsynchronization()
-  href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization__ctor
-  commentId: M:Platform.Threading.Synchronization.Unsynchronization.#ctor
-  fullName: Platform.Threading.Synchronization.Unsynchronization.Unsynchronization()
-  nameWithType: Unsynchronization.Unsynchronization()
-- uid: Platform.Threading.Synchronization.Unsynchronization.#ctor*
-  name: Unsynchronization
-  href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization__ctor_
-  commentId: Overload:Platform.Threading.Synchronization.Unsynchronization.#ctor
-  fullName: Platform.Threading.Synchronization.Unsynchronization.Unsynchronization
-  nameWithType: Unsynchronization.Unsynchronization
 - uid: Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation(System.Action)
   name: ExecuteReadOperation(Action)
   href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization_ExecuteReadOperation_System_Action_
@@ -419,6 +407,7 @@ references:
   name: ExecuteReadOperation
   href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization_ExecuteReadOperation_
   commentId: Overload:Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation
   nameWithType: Unsynchronization.ExecuteReadOperation
 - uid: Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation``1(System.Func{``0})
@@ -440,6 +429,7 @@ references:
   name: ExecuteWriteOperation
   href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization_ExecuteWriteOperation_
   commentId: Overload:Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation
+  isSpec: "True"
   fullName: Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation
   nameWithType: Unsynchronization.ExecuteWriteOperation
 - uid: Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation``1(System.Func{``0})
@@ -461,6 +451,7 @@ references:
   name: AwaitResult
   href: api/Platform.Threading.TaskExtensions.html#Platform_Threading_TaskExtensions_AwaitResult_
   commentId: Overload:Platform.Threading.TaskExtensions.AwaitResult
+  isSpec: "True"
   fullName: Platform.Threading.TaskExtensions.AwaitResult
   nameWithType: TaskExtensions.AwaitResult
 - uid: Platform.Threading.TaskExtensions.AwaitResult``1(System.Threading.Tasks.Task{``0})
@@ -506,6 +497,7 @@ references:
   name: Sleep
   href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_Sleep_
   commentId: Overload:Platform.Threading.ThreadHelpers.Sleep
+  isSpec: "True"
   fullName: Platform.Threading.ThreadHelpers.Sleep
   nameWithType: ThreadHelpers.Sleep
 - uid: Platform.Threading.ThreadHelpers.StartNew(System.Action)
@@ -524,6 +516,7 @@ references:
   name: StartNew
   href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_StartNew_
   commentId: Overload:Platform.Threading.ThreadHelpers.StartNew
+  isSpec: "True"
   fullName: Platform.Threading.ThreadHelpers.StartNew
   nameWithType: ThreadHelpers.StartNew
 - uid: Platform.Threading.ThreadHelpers.StartNew``1(``0,System.Action{System.Object})
@@ -560,6 +553,7 @@ references:
   name: SyncInvokeWithExtendedStack
   href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_SyncInvokeWithExtendedStack_
   commentId: Overload:Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack
+  isSpec: "True"
   fullName: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack
   nameWithType: ThreadHelpers.SyncInvokeWithExtendedStack
 - uid: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack``1(``0,System.Action{System.Object})
