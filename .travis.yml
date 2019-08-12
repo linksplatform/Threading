@@ -6,7 +6,7 @@ before_install:
   - sudo apt-get install -y texlive texlive-lang-cyrillic texlive-latex-extra python-pygments ghostscript
   - export TRAVIS_REPO_NAME=$(echo "${TRAVIS_REPO_SLUG#*/}" | sed 's/.*/\u&/')
 script:
-  - dotnet build
+  - dotnet build -c Release
 after_success:
   - bash ./generate-pdf.sh
   - bash ./publish-docs.sh
