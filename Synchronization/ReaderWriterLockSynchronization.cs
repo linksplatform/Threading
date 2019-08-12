@@ -12,6 +12,7 @@ namespace Platform.Threading.Synchronization
         private readonly ReaderWriterLockSlim _rwLock = new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);
 
         /// <inheritdoc />
+        /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation(System.Action)"]/*'/>
         public void ExecuteReadOperation(Action action)
         {
             _rwLock.EnterReadLock();
@@ -26,6 +27,7 @@ namespace Platform.Threading.Synchronization
         }
 
         /// <inheritdoc />
+        /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation``1(System.Func{``0})"]/*'/>
         public TResult ExecuteReadOperation<TResult>(Func<TResult> function)
         {
             _rwLock.EnterReadLock();
@@ -40,6 +42,7 @@ namespace Platform.Threading.Synchronization
         }
 
         /// <inheritdoc />
+        /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation(System.Action)"]/*'/>
         public void ExecuteWriteOperation(Action action)
         {
             _rwLock.EnterWriteLock();
@@ -54,6 +57,7 @@ namespace Platform.Threading.Synchronization
         }
 
         /// <inheritdoc />
+        /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation``1(System.Func{``0})"]/*'/>
         public TResult ExecuteWriteOperation<TResult>(Func<TResult> function)
         {
             _rwLock.EnterWriteLock();
