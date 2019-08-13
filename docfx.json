@@ -24,7 +24,8 @@
     ],
     "globalMetadata": {
       "_appTitle": "LinksPlatform's Platform.$TRAVIS_REPO_NAME Library",
-      "_enableSearch": true
+      "_enableSearch": true,
+      "_gitUrlPattern": "github"
     },
     "markdownEngineName": "markdig",
     "dest": "_site",
