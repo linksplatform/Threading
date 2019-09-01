@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Threading.ConcurrentQueueExtensions.html",
-          "hash": "i9EHV43hM+hJz1Q+NaXmnA=="
+          "hash": "9RmWGnLJi7ZEzh1LaGo33g=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Threading.Synchronization.ISynchronization.html",
-          "hash": "Nfk+UIQlntb45FwQElPuPw=="
+          "hash": "F44NGejjTodYC0wsUbvr8A=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Threading.Synchronization.ISynchronizationExtensions.html",
-          "hash": "O9VdeMiAC/DypiG4mNMrsA=="
+          "hash": "pyK4KmsXsbDJzi4mmEq2SQ=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Threading.Synchronization.ISynchronized-1.html",
-          "hash": "i9YsAXqnFL+QuWXA7Hw4Tg=="
+          "hash": "roTJsN8bxPh8DE6Ka78Dew=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html",
-          "hash": "NE5uO6Gk8ljbn51y1s4cFg=="
+          "hash": "Aru5gxVszlSaUZbT9xMLtA=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Threading.Synchronization.Unsynchronization.html",
-          "hash": "I1NH1VuW+qUaNWrmJLpT4w=="
+          "hash": "wwji9p/jeclvSldl59XrnQ=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Threading.TaskExtensions.html",
-          "hash": "6qSqKQ6hYI46MXp4fmdcew=="
+          "hash": "5TWWyp65KFeea8wTKeZyAQ=="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.Threading.ThreadHelpers.html",
-          "hash": "Oh8pyhoBWbV/JCWaKiINYg=="
+          "hash": "8RwNB/nF39vHdzdqBlQPtQ=="
         }
       },
       "is_incremental": false,
@@ -183,10 +183,11 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 10,
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
@@ -195,11 +196,10 @@
           "total_file_count": 1,
           "skipped_file_count": 0
         },
-        "TocDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 10,
           "skipped_file_count": 0
         }
       }
