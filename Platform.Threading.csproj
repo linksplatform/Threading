@@ -30,7 +30,7 @@ Refactoring, issues fix.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Collections" Version="0.0.4" />
+    <PackageReference Include="Platform.Collections" Version="0.0.5" />
   </ItemGroup>
 
 </Project>
