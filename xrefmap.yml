@@ -455,38 +455,82 @@ references:
   fullName: Platform.Threading.TaskExtensions.AwaitResult
   nameWithType: TaskExtensions.AwaitResult
 - uid: Platform.Threading.TaskExtensions.AwaitResult``1(System.Threading.Tasks.Task{``0})
-  name: AwaitResult<T>(Task<T>)
+  name: AwaitResult<TReturn>(Task<TReturn>)
   href: api/Platform.Threading.TaskExtensions.html#Platform_Threading_TaskExtensions_AwaitResult__1_System_Threading_Tasks_Task___0__
   commentId: M:Platform.Threading.TaskExtensions.AwaitResult``1(System.Threading.Tasks.Task{``0})
-  name.vb: AwaitResult(Of T)(Task(Of T))
-  fullName: Platform.Threading.TaskExtensions.AwaitResult<T>(System.Threading.Tasks.Task<T>)
-  fullName.vb: Platform.Threading.TaskExtensions.AwaitResult(Of T)(System.Threading.Tasks.Task(Of T))
-  nameWithType: TaskExtensions.AwaitResult<T>(Task<T>)
-  nameWithType.vb: TaskExtensions.AwaitResult(Of T)(Task(Of T))
+  name.vb: AwaitResult(Of TReturn)(Task(Of TReturn))
+  fullName: Platform.Threading.TaskExtensions.AwaitResult<TReturn>(System.Threading.Tasks.Task<TReturn>)
+  fullName.vb: Platform.Threading.TaskExtensions.AwaitResult(Of TReturn)(System.Threading.Tasks.Task(Of TReturn))
+  nameWithType: TaskExtensions.AwaitResult<TReturn>(Task<TReturn>)
+  nameWithType.vb: TaskExtensions.AwaitResult(Of TReturn)(Task(Of TReturn))
 - uid: Platform.Threading.ThreadHelpers
   name: ThreadHelpers
   href: api/Platform.Threading.ThreadHelpers.html
   commentId: T:Platform.Threading.ThreadHelpers
   fullName: Platform.Threading.ThreadHelpers
   nameWithType: ThreadHelpers
+- uid: Platform.Threading.ThreadHelpers.DefaultExtendedMaxStackSize
+  name: DefaultExtendedMaxStackSize
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_DefaultExtendedMaxStackSize
+  commentId: F:Platform.Threading.ThreadHelpers.DefaultExtendedMaxStackSize
+  fullName: Platform.Threading.ThreadHelpers.DefaultExtendedMaxStackSize
+  nameWithType: ThreadHelpers.DefaultExtendedMaxStackSize
 - uid: Platform.Threading.ThreadHelpers.DefaultMaxStackSize
   name: DefaultMaxStackSize
   href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_DefaultMaxStackSize
   commentId: F:Platform.Threading.ThreadHelpers.DefaultMaxStackSize
   fullName: Platform.Threading.ThreadHelpers.DefaultMaxStackSize
   nameWithType: ThreadHelpers.DefaultMaxStackSize
-- uid: Platform.Threading.ThreadHelpers.DefaultSleepTimeout
-  name: DefaultSleepTimeout
-  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_DefaultSleepTimeout
-  commentId: F:Platform.Threading.ThreadHelpers.DefaultSleepTimeout
-  fullName: Platform.Threading.ThreadHelpers.DefaultSleepTimeout
-  nameWithType: ThreadHelpers.DefaultSleepTimeout
-- uid: Platform.Threading.ThreadHelpers.ExtendedMaxStackSize
-  name: ExtendedMaxStackSize
-  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_ExtendedMaxStackSize
-  commentId: F:Platform.Threading.ThreadHelpers.ExtendedMaxStackSize
-  fullName: Platform.Threading.ThreadHelpers.ExtendedMaxStackSize
-  nameWithType: ThreadHelpers.ExtendedMaxStackSize
+- uid: Platform.Threading.ThreadHelpers.DefaultSleepInterval
+  name: DefaultSleepInterval
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_DefaultSleepInterval
+  commentId: F:Platform.Threading.ThreadHelpers.DefaultSleepInterval
+  fullName: Platform.Threading.ThreadHelpers.DefaultSleepInterval
+  nameWithType: ThreadHelpers.DefaultSleepInterval
+- uid: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize(System.Action)
+  name: InvokeWithExtendedMaxStackSize(Action)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithExtendedMaxStackSize_System_Action_
+  commentId: M:Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize(System.Action)
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize(System.Action)
+  nameWithType: ThreadHelpers.InvokeWithExtendedMaxStackSize(Action)
+- uid: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize*
+  name: InvokeWithExtendedMaxStackSize
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithExtendedMaxStackSize_
+  commentId: Overload:Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize
+  isSpec: "True"
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize
+  nameWithType: ThreadHelpers.InvokeWithExtendedMaxStackSize
+- uid: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize``1(``0,System.Action{System.Object})
+  name: InvokeWithExtendedMaxStackSize<T>(T, Action<Object>)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithExtendedMaxStackSize__1___0_System_Action_System_Object__
+  commentId: M:Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize``1(``0,System.Action{System.Object})
+  name.vb: InvokeWithExtendedMaxStackSize(Of T)(T, Action(Of Object))
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize<T>(T, System.Action<System.Object>)
+  fullName.vb: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize(Of T)(T, System.Action(Of System.Object))
+  nameWithType: ThreadHelpers.InvokeWithExtendedMaxStackSize<T>(T, Action<Object>)
+  nameWithType.vb: ThreadHelpers.InvokeWithExtendedMaxStackSize(Of T)(T, Action(Of Object))
+- uid: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize(System.Action,System.Int32)
+  name: InvokeWithModifiedMaxStackSize(Action, Int32)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithModifiedMaxStackSize_System_Action_System_Int32_
+  commentId: M:Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize(System.Action,System.Int32)
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize(System.Action, System.Int32)
+  nameWithType: ThreadHelpers.InvokeWithModifiedMaxStackSize(Action, Int32)
+- uid: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize*
+  name: InvokeWithModifiedMaxStackSize
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithModifiedMaxStackSize_
+  commentId: Overload:Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize
+  isSpec: "True"
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize
+  nameWithType: ThreadHelpers.InvokeWithModifiedMaxStackSize
+- uid: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize``1(``0,System.Action{System.Object},System.Int32)
+  name: InvokeWithModifiedMaxStackSize<T>(T, Action<Object>, Int32)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithModifiedMaxStackSize__1___0_System_Action_System_Object__System_Int32_
+  commentId: M:Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize``1(``0,System.Action{System.Object},System.Int32)
+  name.vb: InvokeWithModifiedMaxStackSize(Of T)(T, Action(Of Object), Int32)
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize<T>(T, System.Action<System.Object>, System.Int32)
+  fullName.vb: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize(Of T)(T, System.Action(Of System.Object), System.Int32)
+  nameWithType: ThreadHelpers.InvokeWithModifiedMaxStackSize<T>(T, Action<Object>, Int32)
+  nameWithType.vb: ThreadHelpers.InvokeWithModifiedMaxStackSize(Of T)(T, Action(Of Object), Int32)
 - uid: Platform.Threading.ThreadHelpers.Sleep
   name: Sleep()
   href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_Sleep
@@ -537,40 +581,3 @@ references:
   fullName.vb: Platform.Threading.ThreadHelpers.StartNew(Of T)(T, System.Action(Of System.Object), System.Int32)
   nameWithType: ThreadHelpers.StartNew<T>(T, Action<Object>, Int32)
   nameWithType.vb: ThreadHelpers.StartNew(Of T)(T, Action(Of Object), Int32)
-- uid: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack(System.Action)
-  name: SyncInvokeWithExtendedStack(Action)
-  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_SyncInvokeWithExtendedStack_System_Action_
-  commentId: M:Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack(System.Action)
-  fullName: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack(System.Action)
-  nameWithType: ThreadHelpers.SyncInvokeWithExtendedStack(Action)
-- uid: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack(System.Action,System.Int32)
-  name: SyncInvokeWithExtendedStack(Action, Int32)
-  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_SyncInvokeWithExtendedStack_System_Action_System_Int32_
-  commentId: M:Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack(System.Action,System.Int32)
-  fullName: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack(System.Action, System.Int32)
-  nameWithType: ThreadHelpers.SyncInvokeWithExtendedStack(Action, Int32)
-- uid: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack*
-  name: SyncInvokeWithExtendedStack
-  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_SyncInvokeWithExtendedStack_
-  commentId: Overload:Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack
-  isSpec: "True"
-  fullName: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack
-  nameWithType: ThreadHelpers.SyncInvokeWithExtendedStack
-- uid: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack``1(``0,System.Action{System.Object})
-  name: SyncInvokeWithExtendedStack<T>(T, Action<Object>)
-  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_SyncInvokeWithExtendedStack__1___0_System_Action_System_Object__
-  commentId: M:Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack``1(``0,System.Action{System.Object})
-  name.vb: SyncInvokeWithExtendedStack(Of T)(T, Action(Of Object))
-  fullName: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack<T>(T, System.Action<System.Object>)
-  fullName.vb: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack(Of T)(T, System.Action(Of System.Object))
-  nameWithType: ThreadHelpers.SyncInvokeWithExtendedStack<T>(T, Action<Object>)
-  nameWithType.vb: ThreadHelpers.SyncInvokeWithExtendedStack(Of T)(T, Action(Of Object))
-- uid: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack``1(``0,System.Action{System.Object},System.Int32)
-  name: SyncInvokeWithExtendedStack<T>(T, Action<Object>, Int32)
-  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_SyncInvokeWithExtendedStack__1___0_System_Action_System_Object__System_Int32_
-  commentId: M:Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack``1(``0,System.Action{System.Object},System.Int32)
-  name.vb: SyncInvokeWithExtendedStack(Of T)(T, Action(Of Object), Int32)
-  fullName: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack<T>(T, System.Action<System.Object>, System.Int32)
-  fullName.vb: Platform.Threading.ThreadHelpers.SyncInvokeWithExtendedStack(Of T)(T, System.Action(Of System.Object), System.Int32)
-  nameWithType: ThreadHelpers.SyncInvokeWithExtendedStack<T>(T, Action<Object>, Int32)
-  nameWithType.vb: ThreadHelpers.SyncInvokeWithExtendedStack(Of T)(T, Action(Of Object), Int32)
