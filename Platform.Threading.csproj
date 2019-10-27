@@ -34,7 +34,7 @@ This release is not backward compatible with the latest 0.0.5 release.</PackageR
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Collections" Version="0.0.5" />
+    <PackageReference Include="Platform.Collections" Version="0.1.0" />
   </ItemGroup>
 
 </Project>
