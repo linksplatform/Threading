@@ -23,7 +23,7 @@ namespace Platform.Threading
         {
             foreach (var item in queue.DequeueAll())
             {
-                await item;
+                await item.ConfigureAwait(continueOnCapturedContext: false);
             }
         }
 
@@ -38,7 +38,7 @@ namespace Platform.Threading
         {
             if (queue.TryDequeue(out Task item))
             {
-                await item;
+                await item.ConfigureAwait(continueOnCapturedContext: false);
             }
         }
 
