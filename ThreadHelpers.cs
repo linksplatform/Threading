@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Threading;
 
 namespace Platform.Threading
@@ -35,6 +36,7 @@ namespace Platform.Threading
         /// <param name="param"><para>The object containing data to be used by the invoked <see cref="Action{T}"/> delegate.</para><para>Объект, содержащий данные, которые будут использоваться вызваемым делегатом <see cref="Action{T}"/>.</para></param>
         /// <param name="action"><para>The <see cref="Action{T}"/> delegate.</para><para>Делагат <see cref="Action{T}"/>.</para></param>
         /// <param name="maxStackSize"><para>The maximum stack size in bytes.</para><para>Максимальный размер стека в байтах.</para></param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void InvokeWithModifiedMaxStackSize<T>(T param, Action<object> action, int maxStackSize) => StartNew(param, action, maxStackSize).Join();
 
         /// <summary>
@@ -44,6 +46,7 @@ namespace Platform.Threading
         /// <typeparam name="T"><para>The type of the <see cref="Action{T}"/> argument.</para><para>Тип аргумента <see cref="Action{T}"/>.</para></typeparam>
         /// <param name="param"><para>The object containing data to be used by the invoked <see cref="Action{T}"/> delegate.</para><para>Объект, содержащий данные, которые будут использоваться вызваемым делегатом <see cref="Action{T}"/>.</para></param>
         /// <param name="action"><para>The <see cref="Action{T}"/> delegate.</para><para>Делагат <see cref="Action{T}"/>.</para></param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void InvokeWithExtendedMaxStackSize<T>(T param, Action<object> action) => InvokeWithModifiedMaxStackSize(param, action, DefaultExtendedMaxStackSize);
 
         /// <summary>
@@ -52,6 +55,7 @@ namespace Platform.Threading
         /// </summary>
         /// <param name="action"><para>The <see cref="Action"/> delegate.</para><para>Делагат <see cref="Action"/>.</para></param>
         /// <param name="maxStackSize"><para>The maximum stack size in bytes.</para><para>Максимальный размер стека в байтах.</para></param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void InvokeWithModifiedMaxStackSize(Action action, int maxStackSize) => StartNew(action, maxStackSize).Join();
 
         /// <summary>
@@ -59,6 +63,7 @@ namespace Platform.Threading
         /// <para>Вызывает <see cref="Action"/> с расширенным максимальным размером стека.</para>
         /// </summary>
         /// <param name="action"><para>The <see cref="Action"/> delegate.</para><para>Делагат <see cref="Action"/>.</para></param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void InvokeWithExtendedMaxStackSize(Action action) => InvokeWithModifiedMaxStackSize(action, DefaultExtendedMaxStackSize);
 
         /// <summary>
@@ -70,6 +75,7 @@ namespace Platform.Threading
         /// <param name="action"><para>The <see cref="Action{T}"/> delegate.</para><para>Делагат <see cref="Action{T}"/>.</para></param>
         /// <param name="maxStackSize"><para>The maximum stack size in bytes.</para><para>Максимальный размер стека в байтах.</para></param>
         /// <returns><para>A new started <see cref="Thread"/> instance.</para><para>Новый запущенный экземпляр <see cref="Thread"/>.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Thread StartNew<T>(T param, Action<object> action, int maxStackSize)
         {
             var thread = new Thread(new ParameterizedThreadStart(action), maxStackSize);
@@ -85,6 +91,7 @@ namespace Platform.Threading
         /// <param name="param"><para>The object containing data to be used by the method that thread executes.</para><para>Объект, содержащий данные, которые будут использоваться методом, выполняемым потоком.</para></param>
         /// <param name="action"><para>The <see cref="Action{T}"/> delegate.</para><para>Делагат <see cref="Action{T}"/>.</para></param>
         /// <returns><para>A new started <see cref="Thread"/> instance.</para><para>Новый запущенный экземпляр <see cref="Thread"/>.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Thread StartNew<T>(T param, Action<object> action) => StartNew(param, action, DefaultMaxStackSize);
 
         /// <summary>
@@ -94,6 +101,7 @@ namespace Platform.Threading
         /// <param name="action"><para>The <see cref="Action"/> delegate.</para><para>Делагат <see cref="Action"/>.</para></param>
         /// <param name="maxStackSize"><para>The maximum stack size in bytes.</para><para>Максимальный размер стека в байтах.</para></param>
         /// <returns><para>A new started <see cref="Thread"/> instance.</para><para>Новый запущенный экземпляр <see cref="Thread"/>.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Thread StartNew(Action action, int maxStackSize)
         {
             var thread = new Thread(new ThreadStart(action), maxStackSize);
@@ -107,11 +115,13 @@ namespace Platform.Threading
         /// </summary>
         /// <param name="action"><para>The <see cref="Action"/> delegate.</para><para>Делагат <see cref="Action"/>.</para></param>
         /// <returns><para>A new started <see cref="Thread"/> instance.</para><para>Новый запущенный экземпляр <see cref="Thread"/>.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Thread StartNew(Action action) => StartNew(action, DefaultMaxStackSize);
 
         /// <summary>
         /// Suspends the current thread for the <see cref="DefaultSleepInterval"/>.
         /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Sleep() => Thread.Sleep(DefaultSleepInterval);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Concurrent;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using Platform.Collections.Concurrent;
 
@@ -17,6 +18,7 @@ namespace Platform.Threading
         /// </summary>
         /// <param name="queue"><para>The queue of asynchronous operations.</para><para>Очередь асинхронных операций.</para></param>
         /// <returns><para>An asynchronous operation representation.</para><para>Представление асинхронной операции.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static async Task AwaitAll(this ConcurrentQueue<Task> queue)
         {
             foreach (var item in queue.DequeueAll())
@@ -31,6 +33,7 @@ namespace Platform.Threading
         /// </summary>
         /// <param name="queue"><para>The queue of asynchronous operations.</para><para>Очередь асинхронных операций.</para></param>
         /// <returns><para>An asynchronous operation representation.</para><para>Представление асинхронной операции.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static async Task AwaitOne(this ConcurrentQueue<Task> queue)
         {
             if (queue.TryDequeue(out Task item))
@@ -45,6 +48,7 @@ namespace Platform.Threading
         /// </summary>
         /// <param name="queue"><para>The queue of asynchronous operations.</para><para>Очередь асинхронных операций.</para></param>
         /// <param name="action"><para>The <see cref="Action"/> delegate.</para><para>Делагат <see cref="Action"/>.</para></param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void EnqueueAsRunnedTask(this ConcurrentQueue<Task> queue, Action action) => queue.Enqueue(Task.Run(action));
     }
 }

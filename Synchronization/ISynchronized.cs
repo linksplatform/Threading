@@ -1,4 +1,6 @@
-﻿namespace Platform.Threading.Synchronization
+﻿using System.Runtime.CompilerServices;
+
+namespace Platform.Threading.Synchronization
 {
     /// <summary>
     /// <para>Represents extendable synchronized interface access gate.</para>
@@ -11,7 +13,11 @@
         /// <para>Gets sychronization method.</para>  
         /// <para>Возвращает способ синхронизации.</para>
         /// </summary>
-        ISynchronization SyncRoot { get; }
+        ISynchronization SyncRoot
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         /// <summary>
         /// <para>Get source version of <typeparamref name="TInterface"/>, that does not garantee thread safe access synchronization.</para>
@@ -21,7 +27,11 @@
         /// <para>It is unsafe to use it directly, unless compound context using SyncRoot is created.</para>
         /// <para>Использовать напрямую небезопасно, за исключением ситуации когда создаётся составной контекст с использованием SyncRoot.</para>
         /// </remarks>
-        TInterface Unsync { get; }
+        TInterface Unsync
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
 
         /// <summary>
         /// <para>Get wrapped/decorated version of <typeparamref name="TInterface"/>, that does garantee thread safe access synchronization.</para>
@@ -31,6 +41,10 @@
         /// <para>It is safe to use it directly, because it must be thread safe implementation.</para>
         /// <para>Безопасно использовать напрямую, так как реализация должна быть потокобезопасной.</para>
         /// </remarks>
-        TInterface Sync { get; }
+        TInterface Sync
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get;
+        }
     }
 }

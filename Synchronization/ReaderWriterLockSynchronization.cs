@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Threading;
 
 namespace Platform.Threading.Synchronization
@@ -13,6 +14,7 @@ namespace Platform.Threading.Synchronization
 
         /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation(System.Action)"]/*'/>
         /// <inheritdoc/>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void ExecuteReadOperation(Action action)
         {
             _rwLock.EnterReadLock();
@@ -28,6 +30,7 @@ namespace Platform.Threading.Synchronization
 
         /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation``1(System.Func{``0})"]/*'/>
         /// <inheritdoc/>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public TResult ExecuteReadOperation<TResult>(Func<TResult> function)
         {
             _rwLock.EnterReadLock();
@@ -43,6 +46,7 @@ namespace Platform.Threading.Synchronization
 
         /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation(System.Action)"]/*'/>
         /// <inheritdoc/>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void ExecuteWriteOperation(Action action)
         {
             _rwLock.EnterWriteLock();
@@ -58,6 +62,7 @@ namespace Platform.Threading.Synchronization
 
         /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation``1(System.Func{``0})"]/*'/>
         /// <inheritdoc/>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public TResult ExecuteWriteOperation<TResult>(Func<TResult> function)
         {
             _rwLock.EnterWriteLock();

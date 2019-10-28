@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
 namespace Platform.Threading
 {
@@ -15,6 +16,7 @@ namespace Platform.Threading
         /// <typeparam name="TReturn"><para>The return value type.</para><para>Тип возвращаемого значения.</para></typeparam>
         /// <param name="task"><para>The asynchronous <see cref="Task{TReturn}"/>.</para><para>Ассинхронная <see cref="Task{TReturn}"/>.</para></param>
         /// <returns><para>The result of completed <see cref="Task{TReturn}"/>.</para><para>Результат завершённой <see cref="Task{TReturn}"/>.</para></returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static TReturn AwaitResult<TReturn>(this Task<TReturn> task) => task.GetAwaiter().GetResult();
     }
 }
