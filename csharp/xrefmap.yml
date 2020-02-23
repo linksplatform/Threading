@@ -1,0 +1,583 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Platform.Threading
+  name: Platform.Threading
+  href: api/Platform.Threading.html
+  commentId: N:Platform.Threading
+  fullName: Platform.Threading
+  nameWithType: Platform.Threading
+- uid: Platform.Threading.ConcurrentQueueExtensions
+  name: ConcurrentQueueExtensions
+  href: api/Platform.Threading.ConcurrentQueueExtensions.html
+  commentId: T:Platform.Threading.ConcurrentQueueExtensions
+  fullName: Platform.Threading.ConcurrentQueueExtensions
+  nameWithType: ConcurrentQueueExtensions
+- uid: Platform.Threading.ConcurrentQueueExtensions.AwaitAll(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task})
+  name: AwaitAll(ConcurrentQueue<Task>)
+  href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_AwaitAll_System_Collections_Concurrent_ConcurrentQueue_System_Threading_Tasks_Task__
+  commentId: M:Platform.Threading.ConcurrentQueueExtensions.AwaitAll(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task})
+  name.vb: AwaitAll(ConcurrentQueue(Of Task))
+  fullName: Platform.Threading.ConcurrentQueueExtensions.AwaitAll(System.Collections.Concurrent.ConcurrentQueue<System.Threading.Tasks.Task>)
+  fullName.vb: Platform.Threading.ConcurrentQueueExtensions.AwaitAll(System.Collections.Concurrent.ConcurrentQueue(Of System.Threading.Tasks.Task))
+  nameWithType: ConcurrentQueueExtensions.AwaitAll(ConcurrentQueue<Task>)
+  nameWithType.vb: ConcurrentQueueExtensions.AwaitAll(ConcurrentQueue(Of Task))
+- uid: Platform.Threading.ConcurrentQueueExtensions.AwaitAll*
+  name: AwaitAll
+  href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_AwaitAll_
+  commentId: Overload:Platform.Threading.ConcurrentQueueExtensions.AwaitAll
+  isSpec: "True"
+  fullName: Platform.Threading.ConcurrentQueueExtensions.AwaitAll
+  nameWithType: ConcurrentQueueExtensions.AwaitAll
+- uid: Platform.Threading.ConcurrentQueueExtensions.AwaitOne(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task})
+  name: AwaitOne(ConcurrentQueue<Task>)
+  href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_AwaitOne_System_Collections_Concurrent_ConcurrentQueue_System_Threading_Tasks_Task__
+  commentId: M:Platform.Threading.ConcurrentQueueExtensions.AwaitOne(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task})
+  name.vb: AwaitOne(ConcurrentQueue(Of Task))
+  fullName: Platform.Threading.ConcurrentQueueExtensions.AwaitOne(System.Collections.Concurrent.ConcurrentQueue<System.Threading.Tasks.Task>)
+  fullName.vb: Platform.Threading.ConcurrentQueueExtensions.AwaitOne(System.Collections.Concurrent.ConcurrentQueue(Of System.Threading.Tasks.Task))
+  nameWithType: ConcurrentQueueExtensions.AwaitOne(ConcurrentQueue<Task>)
+  nameWithType.vb: ConcurrentQueueExtensions.AwaitOne(ConcurrentQueue(Of Task))
+- uid: Platform.Threading.ConcurrentQueueExtensions.AwaitOne*
+  name: AwaitOne
+  href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_AwaitOne_
+  commentId: Overload:Platform.Threading.ConcurrentQueueExtensions.AwaitOne
+  isSpec: "True"
+  fullName: Platform.Threading.ConcurrentQueueExtensions.AwaitOne
+  nameWithType: ConcurrentQueueExtensions.AwaitOne
+- uid: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task},System.Action)
+  name: EnqueueAsRunnedTask(ConcurrentQueue<Task>, Action)
+  href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_EnqueueAsRunnedTask_System_Collections_Concurrent_ConcurrentQueue_System_Threading_Tasks_Task__System_Action_
+  commentId: M:Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task},System.Action)
+  name.vb: EnqueueAsRunnedTask(ConcurrentQueue(Of Task), Action)
+  fullName: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask(System.Collections.Concurrent.ConcurrentQueue<System.Threading.Tasks.Task>, System.Action)
+  fullName.vb: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask(System.Collections.Concurrent.ConcurrentQueue(Of System.Threading.Tasks.Task), System.Action)
+  nameWithType: ConcurrentQueueExtensions.EnqueueAsRunnedTask(ConcurrentQueue<Task>, Action)
+  nameWithType.vb: ConcurrentQueueExtensions.EnqueueAsRunnedTask(ConcurrentQueue(Of Task), Action)
+- uid: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask*
+  name: EnqueueAsRunnedTask
+  href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_EnqueueAsRunnedTask_
+  commentId: Overload:Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask
+  isSpec: "True"
+  fullName: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask
+  nameWithType: ConcurrentQueueExtensions.EnqueueAsRunnedTask
+- uid: Platform.Threading.Synchronization
+  name: Platform.Threading.Synchronization
+  href: api/Platform.Threading.Synchronization.html
+  commentId: N:Platform.Threading.Synchronization
+  fullName: Platform.Threading.Synchronization
+  nameWithType: Platform.Threading.Synchronization
+- uid: Platform.Threading.Synchronization.ISynchronization
+  name: ISynchronization
+  href: api/Platform.Threading.Synchronization.ISynchronization.html
+  commentId: T:Platform.Threading.Synchronization.ISynchronization
+  fullName: Platform.Threading.Synchronization.ISynchronization
+  nameWithType: ISynchronization
+- uid: Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation(System.Action)
+  name: ExecuteReadOperation(Action)
+  href: api/Platform.Threading.Synchronization.ISynchronization.html#Platform_Threading_Synchronization_ISynchronization_ExecuteReadOperation_System_Action_
+  commentId: M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation(System.Action)
+  fullName: Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation(System.Action)
+  nameWithType: ISynchronization.ExecuteReadOperation(Action)
+- uid: Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation*
+  name: ExecuteReadOperation
+  href: api/Platform.Threading.Synchronization.ISynchronization.html#Platform_Threading_Synchronization_ISynchronization_ExecuteReadOperation_
+  commentId: Overload:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation
+  nameWithType: ISynchronization.ExecuteReadOperation
+- uid: Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation``1(System.Func{``0})
+  name: ExecuteReadOperation<TResult>(Func<TResult>)
+  href: api/Platform.Threading.Synchronization.ISynchronization.html#Platform_Threading_Synchronization_ISynchronization_ExecuteReadOperation__1_System_Func___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation``1(System.Func{``0})
+  name.vb: ExecuteReadOperation(Of TResult)(Func(Of TResult))
+  fullName: Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation<TResult>(System.Func<TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation(Of TResult)(System.Func(Of TResult))
+  nameWithType: ISynchronization.ExecuteReadOperation<TResult>(Func<TResult>)
+  nameWithType.vb: ISynchronization.ExecuteReadOperation(Of TResult)(Func(Of TResult))
+- uid: Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation(System.Action)
+  name: ExecuteWriteOperation(Action)
+  href: api/Platform.Threading.Synchronization.ISynchronization.html#Platform_Threading_Synchronization_ISynchronization_ExecuteWriteOperation_System_Action_
+  commentId: M:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation(System.Action)
+  fullName: Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation(System.Action)
+  nameWithType: ISynchronization.ExecuteWriteOperation(Action)
+- uid: Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation*
+  name: ExecuteWriteOperation
+  href: api/Platform.Threading.Synchronization.ISynchronization.html#Platform_Threading_Synchronization_ISynchronization_ExecuteWriteOperation_
+  commentId: Overload:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation
+  nameWithType: ISynchronization.ExecuteWriteOperation
+- uid: Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation``1(System.Func{``0})
+  name: ExecuteWriteOperation<TResult>(Func<TResult>)
+  href: api/Platform.Threading.Synchronization.ISynchronization.html#Platform_Threading_Synchronization_ISynchronization_ExecuteWriteOperation__1_System_Func___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation``1(System.Func{``0})
+  name.vb: ExecuteWriteOperation(Of TResult)(Func(Of TResult))
+  fullName: Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation<TResult>(System.Func<TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronization.ExecuteWriteOperation(Of TResult)(System.Func(Of TResult))
+  nameWithType: ISynchronization.ExecuteWriteOperation<TResult>(Func<TResult>)
+  nameWithType.vb: ISynchronization.ExecuteWriteOperation(Of TResult)(Func(Of TResult))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions
+  name: ISynchronizationExtensions
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html
+  commentId: T:Platform.Threading.Synchronization.ISynchronizationExtensions
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions
+  nameWithType: ISynchronizationExtensions
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation*
+  name: ExecuteReadOperation
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteReadOperation_
+  commentId: Overload:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation
+  nameWithType: ISynchronizationExtensions.ExecuteReadOperation
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``1(Platform.Threading.Synchronization.ISynchronization,``0,System.Action{``0})
+  name: ExecuteReadOperation<TParam>(ISynchronization, TParam, Action<TParam>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteReadOperation__1_Platform_Threading_Synchronization_ISynchronization___0_System_Action___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``1(Platform.Threading.Synchronization.ISynchronization,``0,System.Action{``0})
+  name.vb: ExecuteReadOperation(Of TParam)(ISynchronization, TParam, Action(Of TParam))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation<TParam>(Platform.Threading.Synchronization.ISynchronization, TParam, System.Action<TParam>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation(Of TParam)(Platform.Threading.Synchronization.ISynchronization, TParam, System.Action(Of TParam))
+  nameWithType: ISynchronizationExtensions.ExecuteReadOperation<TParam>(ISynchronization, TParam, Action<TParam>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteReadOperation(Of TParam)(ISynchronization, TParam, Action(Of TParam))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``2(Platform.Threading.Synchronization.ISynchronization,``0,``1,System.Action{``0,``1})
+  name: ExecuteReadOperation<TParam1, TParam2>(ISynchronization, TParam1, TParam2, Action<TParam1, TParam2>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteReadOperation__2_Platform_Threading_Synchronization_ISynchronization___0___1_System_Action___0___1__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``2(Platform.Threading.Synchronization.ISynchronization,``0,``1,System.Action{``0,``1})
+  name.vb: ExecuteReadOperation(Of TParam1, TParam2)(ISynchronization, TParam1, TParam2, Action(Of TParam1, TParam2))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation<TParam1, TParam2>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, System.Action<TParam1, TParam2>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation(Of TParam1, TParam2)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, System.Action(Of TParam1, TParam2))
+  nameWithType: ISynchronizationExtensions.ExecuteReadOperation<TParam1, TParam2>(ISynchronization, TParam1, TParam2, Action<TParam1, TParam2>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteReadOperation(Of TParam1, TParam2)(ISynchronization, TParam1, TParam2, Action(Of TParam1, TParam2))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``2(Platform.Threading.Synchronization.ISynchronization,``1,System.Func{``1,``0})
+  name: ExecuteReadOperation<TResult, TParam>(ISynchronization, TParam, Func<TParam, TResult>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteReadOperation__2_Platform_Threading_Synchronization_ISynchronization___1_System_Func___1___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``2(Platform.Threading.Synchronization.ISynchronization,``1,System.Func{``1,``0})
+  name.vb: ExecuteReadOperation(Of TResult, TParam)(ISynchronization, TParam, Func(Of TParam, TResult))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation<TResult, TParam>(Platform.Threading.Synchronization.ISynchronization, TParam, System.Func<TParam, TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation(Of TResult, TParam)(Platform.Threading.Synchronization.ISynchronization, TParam, System.Func(Of TParam, TResult))
+  nameWithType: ISynchronizationExtensions.ExecuteReadOperation<TResult, TParam>(ISynchronization, TParam, Func<TParam, TResult>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteReadOperation(Of TResult, TParam)(ISynchronization, TParam, Func(Of TParam, TResult))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``3(Platform.Threading.Synchronization.ISynchronization,``0,``1,``2,System.Action{``0,``1,``2})
+  name: ExecuteReadOperation<TParam1, TParam2, TParam3>(ISynchronization, TParam1, TParam2, TParam3, Action<TParam1, TParam2, TParam3>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteReadOperation__3_Platform_Threading_Synchronization_ISynchronization___0___1___2_System_Action___0___1___2__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``3(Platform.Threading.Synchronization.ISynchronization,``0,``1,``2,System.Action{``0,``1,``2})
+  name.vb: ExecuteReadOperation(Of TParam1, TParam2, TParam3)(ISynchronization, TParam1, TParam2, TParam3, Action(Of TParam1, TParam2, TParam3))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation<TParam1, TParam2, TParam3>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, System.Action<TParam1, TParam2, TParam3>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation(Of TParam1, TParam2, TParam3)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, System.Action(Of TParam1, TParam2, TParam3))
+  nameWithType: ISynchronizationExtensions.ExecuteReadOperation<TParam1, TParam2, TParam3>(ISynchronization, TParam1, TParam2, TParam3, Action<TParam1, TParam2, TParam3>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteReadOperation(Of TParam1, TParam2, TParam3)(ISynchronization, TParam1, TParam2, TParam3, Action(Of TParam1, TParam2, TParam3))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``3(Platform.Threading.Synchronization.ISynchronization,``1,``2,System.Func{``1,``2,``0})
+  name: ExecuteReadOperation<TResult, TParam1, TParam2>(ISynchronization, TParam1, TParam2, Func<TParam1, TParam2, TResult>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteReadOperation__3_Platform_Threading_Synchronization_ISynchronization___1___2_System_Func___1___2___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``3(Platform.Threading.Synchronization.ISynchronization,``1,``2,System.Func{``1,``2,``0})
+  name.vb: ExecuteReadOperation(Of TResult, TParam1, TParam2)(ISynchronization, TParam1, TParam2, Func(Of TParam1, TParam2, TResult))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation<TResult, TParam1, TParam2>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, System.Func<TParam1, TParam2, TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation(Of TResult, TParam1, TParam2)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, System.Func(Of TParam1, TParam2, TResult))
+  nameWithType: ISynchronizationExtensions.ExecuteReadOperation<TResult, TParam1, TParam2>(ISynchronization, TParam1, TParam2, Func<TParam1, TParam2, TResult>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteReadOperation(Of TResult, TParam1, TParam2)(ISynchronization, TParam1, TParam2, Func(Of TParam1, TParam2, TResult))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``4(Platform.Threading.Synchronization.ISynchronization,``0,``1,``2,``3,System.Action{``0,``1,``2,``3})
+  name: ExecuteReadOperation<TParam1, TParam2, TParam3, TParam4>(ISynchronization, TParam1, TParam2, TParam3, TParam4, Action<TParam1, TParam2, TParam3, TParam4>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteReadOperation__4_Platform_Threading_Synchronization_ISynchronization___0___1___2___3_System_Action___0___1___2___3__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``4(Platform.Threading.Synchronization.ISynchronization,``0,``1,``2,``3,System.Action{``0,``1,``2,``3})
+  name.vb: ExecuteReadOperation(Of TParam1, TParam2, TParam3, TParam4)(ISynchronization, TParam1, TParam2, TParam3, TParam4, Action(Of TParam1, TParam2, TParam3, TParam4))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation<TParam1, TParam2, TParam3, TParam4>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, TParam4, System.Action<TParam1, TParam2, TParam3, TParam4>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation(Of TParam1, TParam2, TParam3, TParam4)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, TParam4, System.Action(Of TParam1, TParam2, TParam3, TParam4))
+  nameWithType: ISynchronizationExtensions.ExecuteReadOperation<TParam1, TParam2, TParam3, TParam4>(ISynchronization, TParam1, TParam2, TParam3, TParam4, Action<TParam1, TParam2, TParam3, TParam4>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteReadOperation(Of TParam1, TParam2, TParam3, TParam4)(ISynchronization, TParam1, TParam2, TParam3, TParam4, Action(Of TParam1, TParam2, TParam3, TParam4))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``4(Platform.Threading.Synchronization.ISynchronization,``1,``2,``3,System.Func{``1,``2,``3,``0})
+  name: ExecuteReadOperation<TResult, TParam1, TParam2, TParam3>(ISynchronization, TParam1, TParam2, TParam3, Func<TParam1, TParam2, TParam3, TResult>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteReadOperation__4_Platform_Threading_Synchronization_ISynchronization___1___2___3_System_Func___1___2___3___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``4(Platform.Threading.Synchronization.ISynchronization,``1,``2,``3,System.Func{``1,``2,``3,``0})
+  name.vb: ExecuteReadOperation(Of TResult, TParam1, TParam2, TParam3)(ISynchronization, TParam1, TParam2, TParam3, Func(Of TParam1, TParam2, TParam3, TResult))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation<TResult, TParam1, TParam2, TParam3>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, System.Func<TParam1, TParam2, TParam3, TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation(Of TResult, TParam1, TParam2, TParam3)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, System.Func(Of TParam1, TParam2, TParam3, TResult))
+  nameWithType: ISynchronizationExtensions.ExecuteReadOperation<TResult, TParam1, TParam2, TParam3>(ISynchronization, TParam1, TParam2, TParam3, Func<TParam1, TParam2, TParam3, TResult>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteReadOperation(Of TResult, TParam1, TParam2, TParam3)(ISynchronization, TParam1, TParam2, TParam3, Func(Of TParam1, TParam2, TParam3, TResult))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``5(Platform.Threading.Synchronization.ISynchronization,``1,``2,``3,``4,System.Func{``1,``2,``3,``4,``0})
+  name: ExecuteReadOperation<TResult, TParam1, TParam2, TParam3, TParam4>(ISynchronization, TParam1, TParam2, TParam3, TParam4, Func<TParam1, TParam2, TParam3, TParam4, TResult>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteReadOperation__5_Platform_Threading_Synchronization_ISynchronization___1___2___3___4_System_Func___1___2___3___4___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation``5(Platform.Threading.Synchronization.ISynchronization,``1,``2,``3,``4,System.Func{``1,``2,``3,``4,``0})
+  name.vb: ExecuteReadOperation(Of TResult, TParam1, TParam2, TParam3, TParam4)(ISynchronization, TParam1, TParam2, TParam3, TParam4, Func(Of TParam1, TParam2, TParam3, TParam4, TResult))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation<TResult, TParam1, TParam2, TParam3, TParam4>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, TParam4, System.Func<TParam1, TParam2, TParam3, TParam4, TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteReadOperation(Of TResult, TParam1, TParam2, TParam3, TParam4)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, TParam4, System.Func(Of TParam1, TParam2, TParam3, TParam4, TResult))
+  nameWithType: ISynchronizationExtensions.ExecuteReadOperation<TResult, TParam1, TParam2, TParam3, TParam4>(ISynchronization, TParam1, TParam2, TParam3, TParam4, Func<TParam1, TParam2, TParam3, TParam4, TResult>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteReadOperation(Of TResult, TParam1, TParam2, TParam3, TParam4)(ISynchronization, TParam1, TParam2, TParam3, TParam4, Func(Of TParam1, TParam2, TParam3, TParam4, TResult))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation*
+  name: ExecuteWriteOperation
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteWriteOperation_
+  commentId: Overload:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation
+  nameWithType: ISynchronizationExtensions.ExecuteWriteOperation
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``1(Platform.Threading.Synchronization.ISynchronization,``0,System.Action{``0})
+  name: ExecuteWriteOperation<TParam>(ISynchronization, TParam, Action<TParam>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteWriteOperation__1_Platform_Threading_Synchronization_ISynchronization___0_System_Action___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``1(Platform.Threading.Synchronization.ISynchronization,``0,System.Action{``0})
+  name.vb: ExecuteWriteOperation(Of TParam)(ISynchronization, TParam, Action(Of TParam))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation<TParam>(Platform.Threading.Synchronization.ISynchronization, TParam, System.Action<TParam>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation(Of TParam)(Platform.Threading.Synchronization.ISynchronization, TParam, System.Action(Of TParam))
+  nameWithType: ISynchronizationExtensions.ExecuteWriteOperation<TParam>(ISynchronization, TParam, Action<TParam>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteWriteOperation(Of TParam)(ISynchronization, TParam, Action(Of TParam))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``2(Platform.Threading.Synchronization.ISynchronization,``0,``1,System.Action{``0,``1})
+  name: ExecuteWriteOperation<TParam1, TParam2>(ISynchronization, TParam1, TParam2, Action<TParam1, TParam2>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteWriteOperation__2_Platform_Threading_Synchronization_ISynchronization___0___1_System_Action___0___1__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``2(Platform.Threading.Synchronization.ISynchronization,``0,``1,System.Action{``0,``1})
+  name.vb: ExecuteWriteOperation(Of TParam1, TParam2)(ISynchronization, TParam1, TParam2, Action(Of TParam1, TParam2))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation<TParam1, TParam2>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, System.Action<TParam1, TParam2>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation(Of TParam1, TParam2)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, System.Action(Of TParam1, TParam2))
+  nameWithType: ISynchronizationExtensions.ExecuteWriteOperation<TParam1, TParam2>(ISynchronization, TParam1, TParam2, Action<TParam1, TParam2>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteWriteOperation(Of TParam1, TParam2)(ISynchronization, TParam1, TParam2, Action(Of TParam1, TParam2))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``2(Platform.Threading.Synchronization.ISynchronization,``1,System.Func{``1,``0})
+  name: ExecuteWriteOperation<TResult, TParam>(ISynchronization, TParam, Func<TParam, TResult>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteWriteOperation__2_Platform_Threading_Synchronization_ISynchronization___1_System_Func___1___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``2(Platform.Threading.Synchronization.ISynchronization,``1,System.Func{``1,``0})
+  name.vb: ExecuteWriteOperation(Of TResult, TParam)(ISynchronization, TParam, Func(Of TParam, TResult))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation<TResult, TParam>(Platform.Threading.Synchronization.ISynchronization, TParam, System.Func<TParam, TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation(Of TResult, TParam)(Platform.Threading.Synchronization.ISynchronization, TParam, System.Func(Of TParam, TResult))
+  nameWithType: ISynchronizationExtensions.ExecuteWriteOperation<TResult, TParam>(ISynchronization, TParam, Func<TParam, TResult>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteWriteOperation(Of TResult, TParam)(ISynchronization, TParam, Func(Of TParam, TResult))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``3(Platform.Threading.Synchronization.ISynchronization,``0,``1,``2,System.Action{``0,``1,``2})
+  name: ExecuteWriteOperation<TParam1, TParam2, TParam3>(ISynchronization, TParam1, TParam2, TParam3, Action<TParam1, TParam2, TParam3>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteWriteOperation__3_Platform_Threading_Synchronization_ISynchronization___0___1___2_System_Action___0___1___2__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``3(Platform.Threading.Synchronization.ISynchronization,``0,``1,``2,System.Action{``0,``1,``2})
+  name.vb: ExecuteWriteOperation(Of TParam1, TParam2, TParam3)(ISynchronization, TParam1, TParam2, TParam3, Action(Of TParam1, TParam2, TParam3))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation<TParam1, TParam2, TParam3>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, System.Action<TParam1, TParam2, TParam3>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation(Of TParam1, TParam2, TParam3)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, System.Action(Of TParam1, TParam2, TParam3))
+  nameWithType: ISynchronizationExtensions.ExecuteWriteOperation<TParam1, TParam2, TParam3>(ISynchronization, TParam1, TParam2, TParam3, Action<TParam1, TParam2, TParam3>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteWriteOperation(Of TParam1, TParam2, TParam3)(ISynchronization, TParam1, TParam2, TParam3, Action(Of TParam1, TParam2, TParam3))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``3(Platform.Threading.Synchronization.ISynchronization,``1,``2,System.Func{``1,``2,``0})
+  name: ExecuteWriteOperation<TResult, TParam1, TParam2>(ISynchronization, TParam1, TParam2, Func<TParam1, TParam2, TResult>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteWriteOperation__3_Platform_Threading_Synchronization_ISynchronization___1___2_System_Func___1___2___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``3(Platform.Threading.Synchronization.ISynchronization,``1,``2,System.Func{``1,``2,``0})
+  name.vb: ExecuteWriteOperation(Of TResult, TParam1, TParam2)(ISynchronization, TParam1, TParam2, Func(Of TParam1, TParam2, TResult))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation<TResult, TParam1, TParam2>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, System.Func<TParam1, TParam2, TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation(Of TResult, TParam1, TParam2)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, System.Func(Of TParam1, TParam2, TResult))
+  nameWithType: ISynchronizationExtensions.ExecuteWriteOperation<TResult, TParam1, TParam2>(ISynchronization, TParam1, TParam2, Func<TParam1, TParam2, TResult>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteWriteOperation(Of TResult, TParam1, TParam2)(ISynchronization, TParam1, TParam2, Func(Of TParam1, TParam2, TResult))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``4(Platform.Threading.Synchronization.ISynchronization,``0,``1,``2,``3,System.Action{``0,``1,``2,``3})
+  name: ExecuteWriteOperation<TParam1, TParam2, TParam3, TParam4>(ISynchronization, TParam1, TParam2, TParam3, TParam4, Action<TParam1, TParam2, TParam3, TParam4>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteWriteOperation__4_Platform_Threading_Synchronization_ISynchronization___0___1___2___3_System_Action___0___1___2___3__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``4(Platform.Threading.Synchronization.ISynchronization,``0,``1,``2,``3,System.Action{``0,``1,``2,``3})
+  name.vb: ExecuteWriteOperation(Of TParam1, TParam2, TParam3, TParam4)(ISynchronization, TParam1, TParam2, TParam3, TParam4, Action(Of TParam1, TParam2, TParam3, TParam4))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation<TParam1, TParam2, TParam3, TParam4>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, TParam4, System.Action<TParam1, TParam2, TParam3, TParam4>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation(Of TParam1, TParam2, TParam3, TParam4)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, TParam4, System.Action(Of TParam1, TParam2, TParam3, TParam4))
+  nameWithType: ISynchronizationExtensions.ExecuteWriteOperation<TParam1, TParam2, TParam3, TParam4>(ISynchronization, TParam1, TParam2, TParam3, TParam4, Action<TParam1, TParam2, TParam3, TParam4>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteWriteOperation(Of TParam1, TParam2, TParam3, TParam4)(ISynchronization, TParam1, TParam2, TParam3, TParam4, Action(Of TParam1, TParam2, TParam3, TParam4))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``4(Platform.Threading.Synchronization.ISynchronization,``1,``2,``3,System.Func{``1,``2,``3,``0})
+  name: ExecuteWriteOperation<TResult, TParam1, TParam2, TParam3>(ISynchronization, TParam1, TParam2, TParam3, Func<TParam1, TParam2, TParam3, TResult>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteWriteOperation__4_Platform_Threading_Synchronization_ISynchronization___1___2___3_System_Func___1___2___3___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``4(Platform.Threading.Synchronization.ISynchronization,``1,``2,``3,System.Func{``1,``2,``3,``0})
+  name.vb: ExecuteWriteOperation(Of TResult, TParam1, TParam2, TParam3)(ISynchronization, TParam1, TParam2, TParam3, Func(Of TParam1, TParam2, TParam3, TResult))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation<TResult, TParam1, TParam2, TParam3>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, System.Func<TParam1, TParam2, TParam3, TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation(Of TResult, TParam1, TParam2, TParam3)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, System.Func(Of TParam1, TParam2, TParam3, TResult))
+  nameWithType: ISynchronizationExtensions.ExecuteWriteOperation<TResult, TParam1, TParam2, TParam3>(ISynchronization, TParam1, TParam2, TParam3, Func<TParam1, TParam2, TParam3, TResult>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteWriteOperation(Of TResult, TParam1, TParam2, TParam3)(ISynchronization, TParam1, TParam2, TParam3, Func(Of TParam1, TParam2, TParam3, TResult))
+- uid: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``5(Platform.Threading.Synchronization.ISynchronization,``1,``2,``3,``4,System.Func{``1,``2,``3,``4,``0})
+  name: ExecuteWriteOperation<TResult, TParam1, TParam2, TParam3, TParam4>(ISynchronization, TParam1, TParam2, TParam3, TParam4, Func<TParam1, TParam2, TParam3, TParam4, TResult>)
+  href: api/Platform.Threading.Synchronization.ISynchronizationExtensions.html#Platform_Threading_Synchronization_ISynchronizationExtensions_ExecuteWriteOperation__5_Platform_Threading_Synchronization_ISynchronization___1___2___3___4_System_Func___1___2___3___4___0__
+  commentId: M:Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation``5(Platform.Threading.Synchronization.ISynchronization,``1,``2,``3,``4,System.Func{``1,``2,``3,``4,``0})
+  name.vb: ExecuteWriteOperation(Of TResult, TParam1, TParam2, TParam3, TParam4)(ISynchronization, TParam1, TParam2, TParam3, TParam4, Func(Of TParam1, TParam2, TParam3, TParam4, TResult))
+  fullName: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation<TResult, TParam1, TParam2, TParam3, TParam4>(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, TParam4, System.Func<TParam1, TParam2, TParam3, TParam4, TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ISynchronizationExtensions.ExecuteWriteOperation(Of TResult, TParam1, TParam2, TParam3, TParam4)(Platform.Threading.Synchronization.ISynchronization, TParam1, TParam2, TParam3, TParam4, System.Func(Of TParam1, TParam2, TParam3, TParam4, TResult))
+  nameWithType: ISynchronizationExtensions.ExecuteWriteOperation<TResult, TParam1, TParam2, TParam3, TParam4>(ISynchronization, TParam1, TParam2, TParam3, TParam4, Func<TParam1, TParam2, TParam3, TParam4, TResult>)
+  nameWithType.vb: ISynchronizationExtensions.ExecuteWriteOperation(Of TResult, TParam1, TParam2, TParam3, TParam4)(ISynchronization, TParam1, TParam2, TParam3, TParam4, Func(Of TParam1, TParam2, TParam3, TParam4, TResult))
+- uid: Platform.Threading.Synchronization.ISynchronized`1
+  name: ISynchronized<TInterface>
+  href: api/Platform.Threading.Synchronization.ISynchronized-1.html
+  commentId: T:Platform.Threading.Synchronization.ISynchronized`1
+  name.vb: ISynchronized(Of TInterface)
+  fullName: Platform.Threading.Synchronization.ISynchronized<TInterface>
+  fullName.vb: Platform.Threading.Synchronization.ISynchronized(Of TInterface)
+  nameWithType: ISynchronized<TInterface>
+  nameWithType.vb: ISynchronized(Of TInterface)
+- uid: Platform.Threading.Synchronization.ISynchronized`1.Sync
+  name: Sync
+  href: api/Platform.Threading.Synchronization.ISynchronized-1.html#Platform_Threading_Synchronization_ISynchronized_1_Sync
+  commentId: P:Platform.Threading.Synchronization.ISynchronized`1.Sync
+  fullName: Platform.Threading.Synchronization.ISynchronized<TInterface>.Sync
+  fullName.vb: Platform.Threading.Synchronization.ISynchronized(Of TInterface).Sync
+  nameWithType: ISynchronized<TInterface>.Sync
+  nameWithType.vb: ISynchronized(Of TInterface).Sync
+- uid: Platform.Threading.Synchronization.ISynchronized`1.Sync*
+  name: Sync
+  href: api/Platform.Threading.Synchronization.ISynchronized-1.html#Platform_Threading_Synchronization_ISynchronized_1_Sync_
+  commentId: Overload:Platform.Threading.Synchronization.ISynchronized`1.Sync
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.ISynchronized<TInterface>.Sync
+  fullName.vb: Platform.Threading.Synchronization.ISynchronized(Of TInterface).Sync
+  nameWithType: ISynchronized<TInterface>.Sync
+  nameWithType.vb: ISynchronized(Of TInterface).Sync
+- uid: Platform.Threading.Synchronization.ISynchronized`1.SyncRoot
+  name: SyncRoot
+  href: api/Platform.Threading.Synchronization.ISynchronized-1.html#Platform_Threading_Synchronization_ISynchronized_1_SyncRoot
+  commentId: P:Platform.Threading.Synchronization.ISynchronized`1.SyncRoot
+  fullName: Platform.Threading.Synchronization.ISynchronized<TInterface>.SyncRoot
+  fullName.vb: Platform.Threading.Synchronization.ISynchronized(Of TInterface).SyncRoot
+  nameWithType: ISynchronized<TInterface>.SyncRoot
+  nameWithType.vb: ISynchronized(Of TInterface).SyncRoot
+- uid: Platform.Threading.Synchronization.ISynchronized`1.SyncRoot*
+  name: SyncRoot
+  href: api/Platform.Threading.Synchronization.ISynchronized-1.html#Platform_Threading_Synchronization_ISynchronized_1_SyncRoot_
+  commentId: Overload:Platform.Threading.Synchronization.ISynchronized`1.SyncRoot
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.ISynchronized<TInterface>.SyncRoot
+  fullName.vb: Platform.Threading.Synchronization.ISynchronized(Of TInterface).SyncRoot
+  nameWithType: ISynchronized<TInterface>.SyncRoot
+  nameWithType.vb: ISynchronized(Of TInterface).SyncRoot
+- uid: Platform.Threading.Synchronization.ISynchronized`1.Unsync
+  name: Unsync
+  href: api/Platform.Threading.Synchronization.ISynchronized-1.html#Platform_Threading_Synchronization_ISynchronized_1_Unsync
+  commentId: P:Platform.Threading.Synchronization.ISynchronized`1.Unsync
+  fullName: Platform.Threading.Synchronization.ISynchronized<TInterface>.Unsync
+  fullName.vb: Platform.Threading.Synchronization.ISynchronized(Of TInterface).Unsync
+  nameWithType: ISynchronized<TInterface>.Unsync
+  nameWithType.vb: ISynchronized(Of TInterface).Unsync
+- uid: Platform.Threading.Synchronization.ISynchronized`1.Unsync*
+  name: Unsync
+  href: api/Platform.Threading.Synchronization.ISynchronized-1.html#Platform_Threading_Synchronization_ISynchronized_1_Unsync_
+  commentId: Overload:Platform.Threading.Synchronization.ISynchronized`1.Unsync
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.ISynchronized<TInterface>.Unsync
+  fullName.vb: Platform.Threading.Synchronization.ISynchronized(Of TInterface).Unsync
+  nameWithType: ISynchronized<TInterface>.Unsync
+  nameWithType.vb: ISynchronized(Of TInterface).Unsync
+- uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization
+  name: ReaderWriterLockSynchronization
+  href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html
+  commentId: T:Platform.Threading.Synchronization.ReaderWriterLockSynchronization
+  fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization
+  nameWithType: ReaderWriterLockSynchronization
+- uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation(System.Action)
+  name: ExecuteReadOperation(Action)
+  href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization_ExecuteReadOperation_System_Action_
+  commentId: M:Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation(System.Action)
+  fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation(System.Action)
+  nameWithType: ReaderWriterLockSynchronization.ExecuteReadOperation(Action)
+- uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation*
+  name: ExecuteReadOperation
+  href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization_ExecuteReadOperation_
+  commentId: Overload:Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation
+  nameWithType: ReaderWriterLockSynchronization.ExecuteReadOperation
+- uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation``1(System.Func{``0})
+  name: ExecuteReadOperation<TResult>(Func<TResult>)
+  href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization_ExecuteReadOperation__1_System_Func___0__
+  commentId: M:Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation``1(System.Func{``0})
+  name.vb: ExecuteReadOperation(Of TResult)(Func(Of TResult))
+  fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation<TResult>(System.Func<TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteReadOperation(Of TResult)(System.Func(Of TResult))
+  nameWithType: ReaderWriterLockSynchronization.ExecuteReadOperation<TResult>(Func<TResult>)
+  nameWithType.vb: ReaderWriterLockSynchronization.ExecuteReadOperation(Of TResult)(Func(Of TResult))
+- uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation(System.Action)
+  name: ExecuteWriteOperation(Action)
+  href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization_ExecuteWriteOperation_System_Action_
+  commentId: M:Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation(System.Action)
+  fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation(System.Action)
+  nameWithType: ReaderWriterLockSynchronization.ExecuteWriteOperation(Action)
+- uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation*
+  name: ExecuteWriteOperation
+  href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization_ExecuteWriteOperation_
+  commentId: Overload:Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation
+  nameWithType: ReaderWriterLockSynchronization.ExecuteWriteOperation
+- uid: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation``1(System.Func{``0})
+  name: ExecuteWriteOperation<TResult>(Func<TResult>)
+  href: api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html#Platform_Threading_Synchronization_ReaderWriterLockSynchronization_ExecuteWriteOperation__1_System_Func___0__
+  commentId: M:Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation``1(System.Func{``0})
+  name.vb: ExecuteWriteOperation(Of TResult)(Func(Of TResult))
+  fullName: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation<TResult>(System.Func<TResult>)
+  fullName.vb: Platform.Threading.Synchronization.ReaderWriterLockSynchronization.ExecuteWriteOperation(Of TResult)(System.Func(Of TResult))
+  nameWithType: ReaderWriterLockSynchronization.ExecuteWriteOperation<TResult>(Func<TResult>)
+  nameWithType.vb: ReaderWriterLockSynchronization.ExecuteWriteOperation(Of TResult)(Func(Of TResult))
+- uid: Platform.Threading.Synchronization.Unsynchronization
+  name: Unsynchronization
+  href: api/Platform.Threading.Synchronization.Unsynchronization.html
+  commentId: T:Platform.Threading.Synchronization.Unsynchronization
+  fullName: Platform.Threading.Synchronization.Unsynchronization
+  nameWithType: Unsynchronization
+- uid: Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation(System.Action)
+  name: ExecuteReadOperation(Action)
+  href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization_ExecuteReadOperation_System_Action_
+  commentId: M:Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation(System.Action)
+  fullName: Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation(System.Action)
+  nameWithType: Unsynchronization.ExecuteReadOperation(Action)
+- uid: Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation*
+  name: ExecuteReadOperation
+  href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization_ExecuteReadOperation_
+  commentId: Overload:Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation
+  nameWithType: Unsynchronization.ExecuteReadOperation
+- uid: Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation``1(System.Func{``0})
+  name: ExecuteReadOperation<TResult>(Func<TResult>)
+  href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization_ExecuteReadOperation__1_System_Func___0__
+  commentId: M:Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation``1(System.Func{``0})
+  name.vb: ExecuteReadOperation(Of TResult)(Func(Of TResult))
+  fullName: Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation<TResult>(System.Func<TResult>)
+  fullName.vb: Platform.Threading.Synchronization.Unsynchronization.ExecuteReadOperation(Of TResult)(System.Func(Of TResult))
+  nameWithType: Unsynchronization.ExecuteReadOperation<TResult>(Func<TResult>)
+  nameWithType.vb: Unsynchronization.ExecuteReadOperation(Of TResult)(Func(Of TResult))
+- uid: Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation(System.Action)
+  name: ExecuteWriteOperation(Action)
+  href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization_ExecuteWriteOperation_System_Action_
+  commentId: M:Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation(System.Action)
+  fullName: Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation(System.Action)
+  nameWithType: Unsynchronization.ExecuteWriteOperation(Action)
+- uid: Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation*
+  name: ExecuteWriteOperation
+  href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization_ExecuteWriteOperation_
+  commentId: Overload:Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation
+  isSpec: "True"
+  fullName: Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation
+  nameWithType: Unsynchronization.ExecuteWriteOperation
+- uid: Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation``1(System.Func{``0})
+  name: ExecuteWriteOperation<TResult>(Func<TResult>)
+  href: api/Platform.Threading.Synchronization.Unsynchronization.html#Platform_Threading_Synchronization_Unsynchronization_ExecuteWriteOperation__1_System_Func___0__
+  commentId: M:Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation``1(System.Func{``0})
+  name.vb: ExecuteWriteOperation(Of TResult)(Func(Of TResult))
+  fullName: Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation<TResult>(System.Func<TResult>)
+  fullName.vb: Platform.Threading.Synchronization.Unsynchronization.ExecuteWriteOperation(Of TResult)(System.Func(Of TResult))
+  nameWithType: Unsynchronization.ExecuteWriteOperation<TResult>(Func<TResult>)
+  nameWithType.vb: Unsynchronization.ExecuteWriteOperation(Of TResult)(Func(Of TResult))
+- uid: Platform.Threading.TaskExtensions
+  name: TaskExtensions
+  href: api/Platform.Threading.TaskExtensions.html
+  commentId: T:Platform.Threading.TaskExtensions
+  fullName: Platform.Threading.TaskExtensions
+  nameWithType: TaskExtensions
+- uid: Platform.Threading.TaskExtensions.AwaitResult*
+  name: AwaitResult
+  href: api/Platform.Threading.TaskExtensions.html#Platform_Threading_TaskExtensions_AwaitResult_
+  commentId: Overload:Platform.Threading.TaskExtensions.AwaitResult
+  isSpec: "True"
+  fullName: Platform.Threading.TaskExtensions.AwaitResult
+  nameWithType: TaskExtensions.AwaitResult
+- uid: Platform.Threading.TaskExtensions.AwaitResult``1(System.Threading.Tasks.Task{``0})
+  name: AwaitResult<TReturn>(Task<TReturn>)
+  href: api/Platform.Threading.TaskExtensions.html#Platform_Threading_TaskExtensions_AwaitResult__1_System_Threading_Tasks_Task___0__
+  commentId: M:Platform.Threading.TaskExtensions.AwaitResult``1(System.Threading.Tasks.Task{``0})
+  name.vb: AwaitResult(Of TReturn)(Task(Of TReturn))
+  fullName: Platform.Threading.TaskExtensions.AwaitResult<TReturn>(System.Threading.Tasks.Task<TReturn>)
+  fullName.vb: Platform.Threading.TaskExtensions.AwaitResult(Of TReturn)(System.Threading.Tasks.Task(Of TReturn))
+  nameWithType: TaskExtensions.AwaitResult<TReturn>(Task<TReturn>)
+  nameWithType.vb: TaskExtensions.AwaitResult(Of TReturn)(Task(Of TReturn))
+- uid: Platform.Threading.ThreadHelpers
+  name: ThreadHelpers
+  href: api/Platform.Threading.ThreadHelpers.html
+  commentId: T:Platform.Threading.ThreadHelpers
+  fullName: Platform.Threading.ThreadHelpers
+  nameWithType: ThreadHelpers
+- uid: Platform.Threading.ThreadHelpers.DefaultExtendedMaxStackSize
+  name: DefaultExtendedMaxStackSize
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_DefaultExtendedMaxStackSize
+  commentId: F:Platform.Threading.ThreadHelpers.DefaultExtendedMaxStackSize
+  fullName: Platform.Threading.ThreadHelpers.DefaultExtendedMaxStackSize
+  nameWithType: ThreadHelpers.DefaultExtendedMaxStackSize
+- uid: Platform.Threading.ThreadHelpers.DefaultMaxStackSize
+  name: DefaultMaxStackSize
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_DefaultMaxStackSize
+  commentId: F:Platform.Threading.ThreadHelpers.DefaultMaxStackSize
+  fullName: Platform.Threading.ThreadHelpers.DefaultMaxStackSize
+  nameWithType: ThreadHelpers.DefaultMaxStackSize
+- uid: Platform.Threading.ThreadHelpers.DefaultSleepInterval
+  name: DefaultSleepInterval
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_DefaultSleepInterval
+  commentId: F:Platform.Threading.ThreadHelpers.DefaultSleepInterval
+  fullName: Platform.Threading.ThreadHelpers.DefaultSleepInterval
+  nameWithType: ThreadHelpers.DefaultSleepInterval
+- uid: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize(System.Action)
+  name: InvokeWithExtendedMaxStackSize(Action)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithExtendedMaxStackSize_System_Action_
+  commentId: M:Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize(System.Action)
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize(System.Action)
+  nameWithType: ThreadHelpers.InvokeWithExtendedMaxStackSize(Action)
+- uid: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize*
+  name: InvokeWithExtendedMaxStackSize
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithExtendedMaxStackSize_
+  commentId: Overload:Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize
+  isSpec: "True"
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize
+  nameWithType: ThreadHelpers.InvokeWithExtendedMaxStackSize
+- uid: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize``1(``0,System.Action{System.Object})
+  name: InvokeWithExtendedMaxStackSize<T>(T, Action<Object>)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithExtendedMaxStackSize__1___0_System_Action_System_Object__
+  commentId: M:Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize``1(``0,System.Action{System.Object})
+  name.vb: InvokeWithExtendedMaxStackSize(Of T)(T, Action(Of Object))
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize<T>(T, System.Action<System.Object>)
+  fullName.vb: Platform.Threading.ThreadHelpers.InvokeWithExtendedMaxStackSize(Of T)(T, System.Action(Of System.Object))
+  nameWithType: ThreadHelpers.InvokeWithExtendedMaxStackSize<T>(T, Action<Object>)
+  nameWithType.vb: ThreadHelpers.InvokeWithExtendedMaxStackSize(Of T)(T, Action(Of Object))
+- uid: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize(System.Action,System.Int32)
+  name: InvokeWithModifiedMaxStackSize(Action, Int32)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithModifiedMaxStackSize_System_Action_System_Int32_
+  commentId: M:Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize(System.Action,System.Int32)
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize(System.Action, System.Int32)
+  nameWithType: ThreadHelpers.InvokeWithModifiedMaxStackSize(Action, Int32)
+- uid: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize*
+  name: InvokeWithModifiedMaxStackSize
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithModifiedMaxStackSize_
+  commentId: Overload:Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize
+  isSpec: "True"
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize
+  nameWithType: ThreadHelpers.InvokeWithModifiedMaxStackSize
+- uid: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize``1(``0,System.Action{System.Object},System.Int32)
+  name: InvokeWithModifiedMaxStackSize<T>(T, Action<Object>, Int32)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_InvokeWithModifiedMaxStackSize__1___0_System_Action_System_Object__System_Int32_
+  commentId: M:Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize``1(``0,System.Action{System.Object},System.Int32)
+  name.vb: InvokeWithModifiedMaxStackSize(Of T)(T, Action(Of Object), Int32)
+  fullName: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize<T>(T, System.Action<System.Object>, System.Int32)
+  fullName.vb: Platform.Threading.ThreadHelpers.InvokeWithModifiedMaxStackSize(Of T)(T, System.Action(Of System.Object), System.Int32)
+  nameWithType: ThreadHelpers.InvokeWithModifiedMaxStackSize<T>(T, Action<Object>, Int32)
+  nameWithType.vb: ThreadHelpers.InvokeWithModifiedMaxStackSize(Of T)(T, Action(Of Object), Int32)
+- uid: Platform.Threading.ThreadHelpers.Sleep
+  name: Sleep()
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_Sleep
+  commentId: M:Platform.Threading.ThreadHelpers.Sleep
+  fullName: Platform.Threading.ThreadHelpers.Sleep()
+  nameWithType: ThreadHelpers.Sleep()
+- uid: Platform.Threading.ThreadHelpers.Sleep*
+  name: Sleep
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_Sleep_
+  commentId: Overload:Platform.Threading.ThreadHelpers.Sleep
+  isSpec: "True"
+  fullName: Platform.Threading.ThreadHelpers.Sleep
+  nameWithType: ThreadHelpers.Sleep
+- uid: Platform.Threading.ThreadHelpers.StartNew(System.Action)
+  name: StartNew(Action)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_StartNew_System_Action_
+  commentId: M:Platform.Threading.ThreadHelpers.StartNew(System.Action)
+  fullName: Platform.Threading.ThreadHelpers.StartNew(System.Action)
+  nameWithType: ThreadHelpers.StartNew(Action)
+- uid: Platform.Threading.ThreadHelpers.StartNew(System.Action,System.Int32)
+  name: StartNew(Action, Int32)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_StartNew_System_Action_System_Int32_
+  commentId: M:Platform.Threading.ThreadHelpers.StartNew(System.Action,System.Int32)
+  fullName: Platform.Threading.ThreadHelpers.StartNew(System.Action, System.Int32)
+  nameWithType: ThreadHelpers.StartNew(Action, Int32)
+- uid: Platform.Threading.ThreadHelpers.StartNew*
+  name: StartNew
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_StartNew_
+  commentId: Overload:Platform.Threading.ThreadHelpers.StartNew
+  isSpec: "True"
+  fullName: Platform.Threading.ThreadHelpers.StartNew
+  nameWithType: ThreadHelpers.StartNew
+- uid: Platform.Threading.ThreadHelpers.StartNew``1(``0,System.Action{System.Object})
+  name: StartNew<T>(T, Action<Object>)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_StartNew__1___0_System_Action_System_Object__
+  commentId: M:Platform.Threading.ThreadHelpers.StartNew``1(``0,System.Action{System.Object})
+  name.vb: StartNew(Of T)(T, Action(Of Object))
+  fullName: Platform.Threading.ThreadHelpers.StartNew<T>(T, System.Action<System.Object>)
+  fullName.vb: Platform.Threading.ThreadHelpers.StartNew(Of T)(T, System.Action(Of System.Object))
+  nameWithType: ThreadHelpers.StartNew<T>(T, Action<Object>)
+  nameWithType.vb: ThreadHelpers.StartNew(Of T)(T, Action(Of Object))
+- uid: Platform.Threading.ThreadHelpers.StartNew``1(``0,System.Action{System.Object},System.Int32)
+  name: StartNew<T>(T, Action<Object>, Int32)
+  href: api/Platform.Threading.ThreadHelpers.html#Platform_Threading_ThreadHelpers_StartNew__1___0_System_Action_System_Object__System_Int32_
+  commentId: M:Platform.Threading.ThreadHelpers.StartNew``1(``0,System.Action{System.Object},System.Int32)
+  name.vb: StartNew(Of T)(T, Action(Of Object), Int32)
+  fullName: Platform.Threading.ThreadHelpers.StartNew<T>(T, System.Action<System.Object>, System.Int32)
+  fullName.vb: Platform.Threading.ThreadHelpers.StartNew(Of T)(T, System.Action(Of System.Object), System.Int32)
+  nameWithType: ThreadHelpers.StartNew<T>(T, Action<Object>, Int32)
+  nameWithType.vb: ThreadHelpers.StartNew(Of T)(T, Action(Of Object), Int32)
