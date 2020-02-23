@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>LinksPlatform's Platform.Threading Class Library</Description>
+    <Copyright>Konstantin Diachenko</Copyright>
+    <AssemblyTitle>Platform.Threading</AssemblyTitle>
+    <VersionPrefix>0.1.1</VersionPrefix>
+    <Authors>Konstantin Diachenko</Authors>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <AssemblyName>Platform.Threading</AssemblyName>
+    <PackageId>Platform.Threading</PackageId>
+    <PackageTags>LinksPlatform;Threading;ISynchronization;ISynchronizationExtensions;ISynchronized;ReaderWriterLockSynchronization;Unsynchronization;ConcurrentQueueExtensions;TaskExtensions;ThreadHelpers</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
+    <PackageProjectUrl>https://linksplatform.github.io/Threading</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/linksplatform/Threading</RepositoryUrl>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <LangVersion>latest</LangVersion>
+    <PackageReleaseNotes>Lowest supported version of .NET Framework is now 4.7.1.
+Added support for .NET Standard 2.1 (.NET Core 3.0).
+Platform.Collections dependency updated from 0.0.5 to 0.1.0.
+Source link enabled.
+Travis CI disabled.
+GitHub Actions enabled.
+Performance optimizations, issues fix.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Platform.Collections" Version="0.1.0" />
+  </ItemGroup>
+
+</Project>
