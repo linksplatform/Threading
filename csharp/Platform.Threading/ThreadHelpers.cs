@@ -20,7 +20,7 @@ namespace Platform.Threading
         /// <para>Gets the extended maximum stack size in bytes by default.</para>
         /// <para>Возвращает расширенный максимальный размер стека в байтах по умолчанию.</para>
         /// </summary>
-        public static readonly int DefaultExtendedMaxStackSize = 200 * 1024 * 1024;
+        public static readonly int DefaultExtendedMaxStackSize = 256 * 1024 * 1024;
 
         /// <summary>
         /// <para>Returns the default time interval for transferring control to other threads in milliseconds</para>
