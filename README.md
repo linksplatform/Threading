@@ -7,14 +7,14 @@
 
 LinksPlatform's Platform.Threading Class Library.
 
-Namespace: [Platform.Threading](https://linksplatform.github.io/Threading/api/Platform.Threading.html)
+Namespace: [Platform.Threading](https://linksplatform.github.io/Threading/csharp/api/Platform.Threading.html)
 
 Forked from: [Konard/LinksPlatform/Platform/Platform.Helpers/Threading](https://github.com/Konard/LinksPlatform/tree/b41aac7909066bb746c7f8e29a1cd59710e5b0d5/Platform/Platform.Helpers/Threading)
 
 NuGet package: [Platform.Threading](https://www.nuget.org/packages/Platform.Threading)
 
 ## [Documentation](https://linksplatform.github.io/Threading)
-[PDF file](https://linksplatform.github.io/Threading/Platform.Threading.pdf) with code for e-readers.
+[PDF file](https://linksplatform.github.io/Threading/csharp/Platform.Threading.pdf) with code for e-readers.
 
 ## Depend on
 *   [Platform.Collections](https://github.com/linksplatform/Collections)
