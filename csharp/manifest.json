@@ -18,7 +18,139 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "NYjFOoUq2SfNV+uaqpdyIg=="
+          "hash": "Z+T+0kEIxj/j1UXpgpU7Rw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.ConcurrentQueueExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.ConcurrentQueueExtensions.html",
+          "hash": "ksuPPOqEkjUktApSA1kqzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.ISynchronization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.ISynchronization.html",
+          "hash": "nxCRDbs+vpb0reCyCL/+ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.ISynchronizationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.ISynchronizationExtensions.html",
+          "hash": "UeEpPJWtAs6UqLPkbNepKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.ISynchronized-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.ISynchronized-1.html",
+          "hash": "6qHZQi6O++tcRGZbRZCBSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.ReaderWriterLockSynchronization.html",
+          "hash": "qybEqPr7U7c9bmb8WkbnZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.Unsynchronization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.Unsynchronization.html",
+          "hash": "wvPMxxvE7PmhWcaegqRAqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.Synchronization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.Synchronization.html",
+          "hash": "8K4bUAsv79Ws2+Ex6ENusQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.TaskExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.TaskExtensions.html",
+          "hash": "iEpuFwn+zGG8PvKIIviXXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.ThreadHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.ThreadHelpers.html",
+          "hash": "hXMFaOkQZzbYaTyleRlb1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Threading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Threading.html",
+          "hash": "O0Oy6odlrmRbjCabBK/S2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "2eZUaJqPqqSOI7BKVHBHYg=="
         }
       },
       "is_incremental": false,
@@ -33,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "zwxrKMmb6LUPx3ZpzshKmw=="
+          "hash": "T7wOHKUxsPzgz/7V2NiBUw=="
         }
       },
       "is_incremental": false,
@@ -55,6 +187,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
