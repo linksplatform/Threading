@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Threading Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Threading</AssemblyTitle>
-    <VersionPrefix>0.2.1</VersionPrefix>
+    <VersionPrefix>0.3.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net5</TargetFrameworks>
     <AssemblyName>Platform.Threading</AssemblyName>
@@ -24,8 +24,8 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Platform.Collections dependency updated from 0.2.0 to 0.2.1.
-ThreadHelpers.DefaultExtendedMaxStackSize is now 256 MiB.</PackageReleaseNotes>
+    <PackageReleaseNotes>.NET 5 support is added.
+Platform.Collections dependency updated from 0.2.1 to 0.3.0.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
