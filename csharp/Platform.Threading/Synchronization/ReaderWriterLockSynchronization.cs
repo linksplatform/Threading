@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.CompilerServices;
 using System.Threading;
 
@@ -10,6 +10,12 @@ namespace Platform.Threading.Synchronization
     /// </summary>
     public class ReaderWriterLockSynchronization : ISynchronization
     {
+        /// <summary>
+        /// <para>
+        /// The supports recursion.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly ReaderWriterLockSlim _rwLock = new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);
 
         /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.ExecuteReadOperation(System.Action)"]/*'/>
