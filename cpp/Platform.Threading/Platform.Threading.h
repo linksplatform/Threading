@@ -1,9 +1,11 @@
 #ifndef PLATFORM_THREADING
 #define PLATFORM_THREADING
 
+#include <map> // TODO: in Collections
+
 #include <Platform.Collections.h>
 
-#include <map>
+
 #include <queue>
 #include <future>
 #include <thread>
