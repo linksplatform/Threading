@@ -1,12 +1,3 @@
-#include <ranges>
-#include <memory>
-#include <iostream>
-#include <shared_mutex>
-#include <queue>
-#include <mutex>
-#include <map>
-#include <thread>
-
 #include "Platform.Threading.h"
 
 using namespace std::chrono_literals;
