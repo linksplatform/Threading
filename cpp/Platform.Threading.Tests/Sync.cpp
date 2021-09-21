@@ -1,11 +1,11 @@
 namespace Platform::Threading::Tests
 {
-    TEST(Synchronization, Sync)
+    TEST(Synchronization, Sync_Stupid)
     {
         using namespace Synchronization;
 
         auto threads_count = 1000;
-        auto map_operations_count = 100;
+        auto map_operations_count = 1000;
         Sync<std::map<std::string, int>> dict{};
 
         auto work = [&]
@@ -37,7 +37,7 @@ namespace Platform::Threading::Tests
         using namespace Synchronization;
 
         auto threads_count = 1000;
-        auto map_operations_count = 100;
+        auto map_operations_count = 1000;
 
         std::map<std::string, int> dict{};
 
