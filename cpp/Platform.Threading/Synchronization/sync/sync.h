@@ -2,7 +2,7 @@ template<typename T,
     typename mutex_t = std::recursive_mutex,
     typename mut_lock_t = std::unique_lock<mutex_t>,
     typename lock_t = std::unique_lock<mutex_t>>
-class sync
+class Sync
 {
     mutable T data;
     mutable mutex_t mutex;
@@ -21,30 +21,30 @@ class sync
     };
 
 public:
-    sync() = default;
+    Sync() = default;
 
-    sync(auto&&... args) requires requires { decltype(data)(std::forward<decltype(args)>(args)...); }
+    Sync(auto&&... args) requires requires { decltype(data)(std::forward<decltype(args)>(args)...); }
         : data(std::forward<decltype(args)>(args)...),
           mutex() {}
 
-    sync(const sync<T>& other)
+    Sync(const Sync<T>& other)
         : data(other.data),
           mutex() {}
 
-    sync(sync&&) noexcept = default;
+    Sync(Sync&&) noexcept = default;
 
     auto operator->()       { return locked_caller<mut_lock_t>(&data, mutex); }
     auto operator->() const { return locked_caller<lock_t>(&data, mutex); }
 
     /// friends
     template<typename... Args>
-    friend auto&& Drop(sync<Args...>&& self);
+    friend auto&& Drop(Sync<Args...>&& self);
 };
 
 template<typename T>
-sync(T) -> sync<T>;
+Sync(T) -> Sync<T>;
 
 template<typename... Args>
-auto&& Drop(sync<Args...>&& self) {
+auto&& Drop(Sync<Args...>&& self) {
     return std::move(self.data);
 }

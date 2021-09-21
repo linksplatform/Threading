@@ -12,7 +12,7 @@ auto main() -> int {
     queue.push(std::async([]() { std::this_thread::sleep_for(100ms); std::cout << "vno\n"; }));
     queue.push(std::async([]() { std::cout << "async programming is super\n"; }));
 
-    auto sync_queue = sync(std::move(queue));
+    auto sync_queue = Sync(std::move(queue));
     AwaitOne(sync_queue).wait();
     auto queue_two = Drop(std::move(sync_queue));
     std::cout << "not waited count: " << queue_two.size() << std::endl;
