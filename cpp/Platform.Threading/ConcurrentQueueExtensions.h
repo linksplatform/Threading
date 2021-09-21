@@ -1,23 +1,34 @@
 ﻿namespace Platform::Threading
 {
-    class ConcurrentQueueExtensions
+    template<typename R>
+    auto AwaitAll(Synchronization::sync<std::queue<std::future<R>>>& queue)
     {
-        public: static async Task AwaitAll(ConcurrentQueue<Task> queue)
+        auto lambda = [&queue]
         {
-            foreach (auto item in queue.DequeueAll())
+            while (!queue->empty())
             {
-                await item.ConfigureAwait(continueOnCapturedContext: false);
+                auto& item = queue->front();
+                item.wait();
+                queue->pop();
             }
-        }
+        };
+        return std::async(lambda);
+    }
 
-        public: static async Task AwaitOne(ConcurrentQueue<Task> queue)
+    template<typename R>
+    auto AwaitOne(Synchronization::sync<std::queue<std::future<R>>>& queue)
+    {
+        auto lambda = [&queue]
         {
-            if (queue.TryDequeue(out Task item))
+            if (!queue->empty())
             {
-                await item.ConfigureAwait(continueOnCapturedContext: false);
+                auto& item = queue->front();
+                item.wait();
+                queue->pop();
             }
-        }
+        };
+        return std::async(lambda);
+    }
 
-        public: static void EnqueueAsRunnedTask(ConcurrentQueue<Task> queue, std::function<void()> action) { queue.Enqueue(Task.Run(action)); }
-    };
+    // public: static void EnqueueAsRunnedTask(ConcurrentQueue<Task> queue, std::function<void()> action) { queue.Enqueue(Task.Run(action)); }
 }
