@@ -1,59 +1,30 @@
 ﻿namespace Platform::Threading::Synchronization
 {
-    class ReaderWriterLockSynchronization : public ISynchronization
+    template<
+        typename mutex_t = std::recursive_mutex,
+        template<typename> typename lock_t = std::unique_lock>
+    void ExecuteReadOperation(auto&& action, auto&&... args)
     {
-        private: readonly ReaderWriterLockSlim _rwLock = ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);
+        static mutex_t mutex;
 
-        public: void ExecuteReadOperation(std::function<void()> action)
+        lock_t lock(mutex);
+        try
         {
-            _rwLock.EnterReadLock();
-            try
-            {
-                action();
-            }
-            finally
-            {
-                _rwLock.ExitReadLock();
-            }
-        }
+            action(std::forward<decltype(args)>(args)...);
+        } catch(...) {}
+    }
 
-        public: TResult ExecuteReadOperation<TResult>(std::function<TResult()> function)
-        {
-            _rwLock.EnterReadLock();
-            try
-            {
-                return function();
-            }
-            finally
-            {
-                _rwLock.ExitReadLock();
-            }
-        }
+    template<
+        typename mutex_t = std::recursive_mutex,
+        template<typename> typename lock_t = std::unique_lock>
+    void ExecuteWriteOperation(auto&& action, auto&&... args)
+    {
+        static mutex_t mutex;
 
-        public: void ExecuteWriteOperation(std::function<void()> action)
+        lock_t lock(mutex);
+        try
         {
-            _rwLock.EnterWriteLock();
-            try
-            {
-                action();
-            }
-            finally
-            {
-                _rwLock.ExitWriteLock();
-            }
-        }
-
-        public: TResult ExecuteWriteOperation<TResult>(std::function<TResult()> function)
-        {
-            _rwLock.EnterWriteLock();
-            try
-            {
-                return function();
-            }
-            finally
-            {
-                _rwLock.ExitWriteLock();
-            }
-        }
-    };
+            action(std::forward<decltype(args)>(args)...);
+        } catch(...) {}
+    }
 }

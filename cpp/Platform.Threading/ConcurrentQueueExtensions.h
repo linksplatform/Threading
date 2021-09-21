@@ -1,7 +1,7 @@
 ﻿namespace Platform::Threading
 {
     template<typename R>
-    auto AwaitAll(Synchronization::sync<std::queue<std::future<R>>>& queue)
+    auto AwaitAll(Synchronization::Sync<std::queue<std::future<R>>>& queue)
     {
         auto lambda = [&queue]
         {
@@ -16,7 +16,7 @@
     }
 
     template<typename R>
-    auto AwaitOne(Synchronization::sync<std::queue<std::future<R>>>& queue)
+    auto AwaitOne(Synchronization::Sync<std::queue<std::future<R>>>& queue)
     {
         auto lambda = [&queue]
         {
