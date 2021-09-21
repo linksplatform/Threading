@@ -3,6 +3,7 @@
 
 #include <Platform.Collections.h>
 
+#include <map>
 #include <queue>
 #include <future>
 #include <thread>
