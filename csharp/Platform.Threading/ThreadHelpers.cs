@@ -66,7 +66,8 @@ namespace Platform.Threading
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void InvokeWithExtendedMaxStackSize(Action action) => InvokeWithModifiedMaxStackSize(action, DefaultExtendedMaxStackSize);
 
-        private, causes the operating system to change the state of that instance to <see cref="ThreadState.Running"/> and supplies an object containing data to be used by the method that thread executes.</para>
+        /// <summary>
+        /// <para>Initializes a new instance of the <see cref="Thread"/> class, causes the operating system to change the state of that instance to <see cref="ThreadState.Running"/> and supplies an object containing data to be used by the method that thread executes.</para>
         /// <para>Инициализирует новый экземпляр класса <see cref="Thread"/>, просит операционную систему изменить состояние этого экземпляра на <see cref="ThreadState.Running"/> и предоставляет объект, содержащий данные, которые будут использоваться в методе, который выполняет этот поток.</para>
         /// </summary>
         /// <typeparam name="T"><para>The type of the <see cref="Action{T}"/> argument.</para><para>Тип аргумента <see cref="Action{T}"/>.</para></typeparam>
@@ -82,7 +83,8 @@ namespace Platform.Threading
             return thread;
         }
 
-        private, causes the operating system to change the state of that instance to <see cref="ThreadState.Running"/> and supplies an object containing data to be used by the method that thread executes.</para>
+        /// <summary>
+        /// <para>Initializes a new instance of the <see cref="Thread"/> class, causes the operating system to change the state of that instance to <see cref="ThreadState.Running"/> and supplies an object containing data to be used by the method that thread executes.</para>
         /// <para>Инициализирует новый экземпляр класса <see cref="Thread"/>, просит операционную систему изменить состояние этого экземпляра на <see cref="ThreadState.Running"/> и предоставляет объект, содержащий данные, которые будут использоваться в методе, который выполняет этот поток.</para>
         /// </summary>
         /// <typeparam name="T"><para>The type of the <see cref="Action{T}"/> argument.</para><para>Тип аргумента <see cref="Action{T}"/>.</para></typeparam>
@@ -92,7 +94,8 @@ namespace Platform.Threading
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Thread StartNew<T>(T param, Action<object> action) => StartNew(param, action, DefaultMaxStackSize);
 
-        private, causes the operating system to change the state of that instance to <see cref="ThreadState.Running"/> and supplies the method executed by that thread.</para>
+        /// <summary>
+        /// <para>Initializes a new instance of the <see cref="Thread"/> class, causes the operating system to change the state of that instance to <see cref="ThreadState.Running"/> and supplies the method executed by that thread.</para>
         /// <para>Инициализирует новый экземпляр класса <see cref="Thread"/>, просит операционную систему изменить состояние этого экземпляра на <see cref="ThreadState.Running"/> и предоставляет метод, который выполняется этим потоком.</para>
         /// </summary>
         /// <param name="action"><para>The <see cref="Action"/> delegate.</para><para>Делагат <see cref="Action"/>.</para></param>
@@ -106,7 +109,8 @@ namespace Platform.Threading
             return thread;
         }
 
-        private, causes the operating system to change the state of that instance to <see cref="ThreadState.Running"/> and supplies the method executed by that thread.</para>
+        /// <summary>
+        /// <para>Initializes a new instance of the <see cref="Thread"/> class, causes the operating system to change the state of that instance to <see cref="ThreadState.Running"/> and supplies the method executed by that thread.</para>
         /// <para>Инициализирует новый экземпляр класса <see cref="Thread"/>, просит операционную систему изменить состояние этого экземпляра на <see cref="ThreadState.Running"/> и предоставляет метод, который выполняется этим потоком.</para>
         /// </summary>
         /// <param name="action"><para>The <see cref="Action"/> delegate.</para><para>Делагат <see cref="Action"/>.</para></param>
