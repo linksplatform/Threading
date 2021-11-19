@@ -2,20 +2,8 @@ using Xunit;
 
 namespace Platform.Threading.Tests
 {
-    /// <summary>
-    /// <para>
-    /// Represents the thread helpers tests.
-    /// </para>
-    /// <para></para>
-    /// </summary>
     public class ThreadHelpersTests
     {
-        /// <summary>
-        /// <para>
-        /// Tests that invoke test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public void InvokeTest()
         {
