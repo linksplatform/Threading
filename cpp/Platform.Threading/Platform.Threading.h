@@ -13,7 +13,7 @@
 
 namespace Platform::Threading::Synchronization
 {
-    #include "Synchronization/sync/Sync.h"
+    #include "Synchronization/Sync/Sync.h"
 }
 
 #include "Synchronization/ReaderWriterLockSynchronization.h"
