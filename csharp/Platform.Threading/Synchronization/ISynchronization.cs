@@ -15,7 +15,7 @@ namespace Platform.Threading.Synchronization
         /// </summary>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        void ExecuteReadOperation(Action action);
+        void DoRead(Action action);
 
         /// <summary>
         /// <para>Executes a function in read access mode and returns the function's result.</para>
@@ -25,7 +25,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TResult ExecuteReadOperation<TResult>(Func<TResult> function);
+        TResult DoRead<TResult>(Func<TResult> function);
 
         /// <summary>
         /// <para>Executes action in write access mode.</para>
@@ -33,7 +33,7 @@ namespace Platform.Threading.Synchronization
         /// </summary>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        void ExecuteWriteOperation(Action action);
+        void DoWrite(Action action);
 
         /// <summary>
         /// <para>Executes a function in write access mode and returns the function's result.</para>
@@ -43,6 +43,6 @@ namespace Platform.Threading.Synchronization
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        TResult ExecuteWriteOperation<TResult>(Func<TResult> function);
+        TResult DoWrite<TResult>(Func<TResult> function);
     }
 }
