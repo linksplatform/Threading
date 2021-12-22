@@ -49,6 +49,6 @@ namespace Platform.Threading
         /// <param name="queue"><para>The queue of asynchronous operations.</para><para>Очередь асинхронных операций.</para></param>
         /// <param name="action"><para>The <see cref="Action"/> delegate.</para><para>Делагат <see cref="Action"/>.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void EnqueueAsRunnedTask(this ConcurrentQueue<Task> queue, Action action) => queue.Enqueue(Task.Run(action));
+        public static void RunAndPush(this ConcurrentQueue<Task> queue, Action action) => queue.Enqueue(Task.Run(action));
     }
 }
