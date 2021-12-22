@@ -20,7 +20,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TResult ExecuteReadOperation<TResult, TParam>(this ISynchronization synchronization, TParam parameter, Func<TParam, TResult> function) => synchronization.ExecuteReadOperation(() => function(parameter));
+        public static TResult DoRead<TResult, TParam>(this ISynchronization synchronization, TParam parameter, Func<TParam, TResult> function) => synchronization.DoRead(() => function(parameter));
 
         /// <summary>
         /// <para>Executes action in read access mode.</para>
@@ -31,7 +31,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter"><para>The parameter</para><para>Параметр.</para></param>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void ExecuteReadOperation<TParam>(this ISynchronization synchronization, TParam parameter, Action<TParam> action) => synchronization.ExecuteReadOperation(() => action(parameter));
+        public static void DoRead<TParam>(this ISynchronization synchronization, TParam parameter, Action<TParam> action) => synchronization.DoRead(() => action(parameter));
 
         /// <summary>
         /// <para>Executes a function in write access mode and returns the function's result.</para>
@@ -44,7 +44,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TResult ExecuteWriteOperation<TResult, TParam>(this ISynchronization synchronization, TParam parameter, Func<TParam, TResult> function) => synchronization.ExecuteWriteOperation(() => function(parameter));
+        public static TResult DoWrite<TResult, TParam>(this ISynchronization synchronization, TParam parameter, Func<TParam, TResult> function) => synchronization.DoWrite(() => function(parameter));
 
         /// <summary>
         /// <para>Executes action in write access mode.</para>
@@ -55,7 +55,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter"><para>The parameter</para><para>Параметр.</para></param>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void ExecuteWriteOperation<TParam>(this ISynchronization synchronization, TParam parameter, Action<TParam> action) => synchronization.ExecuteWriteOperation(() => action(parameter));
+        public static void DoWrite<TParam>(this ISynchronization synchronization, TParam parameter, Action<TParam> action) => synchronization.DoWrite(() => action(parameter));
 
         /// <summary>
         /// <para>Executes a function in read access mode and returns the function's result.</para>
@@ -70,7 +70,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TResult ExecuteReadOperation<TResult, TParam1, TParam2>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, Func<TParam1, TParam2, TResult> function) => synchronization.ExecuteReadOperation(() => function(parameter1, parameter2));
+        public static TResult DoRead<TResult, TParam1, TParam2>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, Func<TParam1, TParam2, TResult> function) => synchronization.DoRead(() => function(parameter1, parameter2));
 
         /// <summary>
         /// <para>Executes action in read access mode.</para>
@@ -83,7 +83,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter2"><para>The second parameter</para><para>Второй параметр.</para></param>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void ExecuteReadOperation<TParam1, TParam2>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, Action<TParam1, TParam2> action) => synchronization.ExecuteReadOperation(() => action(parameter1, parameter2));
+        public static void DoRead<TParam1, TParam2>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, Action<TParam1, TParam2> action) => synchronization.DoRead(() => action(parameter1, parameter2));
 
         /// <summary>
         /// <para>Executes a function in write access mode and returns the function's result.</para>
@@ -98,7 +98,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TResult ExecuteWriteOperation<TResult, TParam1, TParam2>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, Func<TParam1, TParam2, TResult> function) => synchronization.ExecuteWriteOperation(() => function(parameter1, parameter2));
+        public static TResult DoWrite<TResult, TParam1, TParam2>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, Func<TParam1, TParam2, TResult> function) => synchronization.DoWrite(() => function(parameter1, parameter2));
 
         /// <summary>
         /// <para>Executes action in write access mode.</para>
@@ -111,7 +111,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter2"><para>The second parameter</para><para>Второй параметр.</para></param>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void ExecuteWriteOperation<TParam1, TParam2>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, Action<TParam1, TParam2> action) => synchronization.ExecuteWriteOperation(() => action(parameter1, parameter2));
+        public static void DoWrite<TParam1, TParam2>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, Action<TParam1, TParam2> action) => synchronization.DoWrite(() => action(parameter1, parameter2));
 
         /// <summary>
         /// <para>Executes a function in read access mode and returns the function's result.</para>
@@ -128,7 +128,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TResult ExecuteReadOperation<TResult, TParam1, TParam2, TParam3>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, Func<TParam1, TParam2, TParam3, TResult> function) => synchronization.ExecuteReadOperation(() => function(parameter1, parameter2, parameter3));
+        public static TResult DoRead<TResult, TParam1, TParam2, TParam3>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, Func<TParam1, TParam2, TParam3, TResult> function) => synchronization.DoRead(() => function(parameter1, parameter2, parameter3));
 
         /// <summary>
         /// <para>Executes action in read access mode.</para>
@@ -143,7 +143,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter3"><para>The third parameter</para><para>Третий параметр.</para></param>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void ExecuteReadOperation<TParam1, TParam2, TParam3>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, Action<TParam1, TParam2, TParam3> action) => synchronization.ExecuteReadOperation(() => action(parameter1, parameter2, parameter3));
+        public static void DoRead<TParam1, TParam2, TParam3>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, Action<TParam1, TParam2, TParam3> action) => synchronization.DoRead(() => action(parameter1, parameter2, parameter3));
 
         /// <summary>
         /// <para>Executes a function in write access mode and returns the function's result.</para>
@@ -160,7 +160,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TResult ExecuteWriteOperation<TResult, TParam1, TParam2, TParam3>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, Func<TParam1, TParam2, TParam3, TResult> function) => synchronization.ExecuteWriteOperation(() => function(parameter1, parameter2, parameter3));
+        public static TResult DoWrite<TResult, TParam1, TParam2, TParam3>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, Func<TParam1, TParam2, TParam3, TResult> function) => synchronization.DoWrite(() => function(parameter1, parameter2, parameter3));
 
         /// <summary>
         /// <para>Executes action in write access mode.</para>
@@ -175,7 +175,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter3"><para>The third parameter</para><para>Третий параметр.</para></param>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void ExecuteWriteOperation<TParam1, TParam2, TParam3>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, Action<TParam1, TParam2, TParam3> action) => synchronization.ExecuteWriteOperation(() => action(parameter1, parameter2, parameter3));
+        public static void DoWrite<TParam1, TParam2, TParam3>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, Action<TParam1, TParam2, TParam3> action) => synchronization.DoWrite(() => action(parameter1, parameter2, parameter3));
 
         /// <summary>
         /// <para>Executes a function in read access mode and returns the function's result.</para>
@@ -194,7 +194,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TResult ExecuteReadOperation<TResult, TParam1, TParam2, TParam3, TParam4>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Func<TParam1, TParam2, TParam3, TParam4, TResult> function) => synchronization.ExecuteReadOperation(() => function(parameter1, parameter2, parameter3, parameter4));
+        public static TResult DoRead<TResult, TParam1, TParam2, TParam3, TParam4>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Func<TParam1, TParam2, TParam3, TParam4, TResult> function) => synchronization.DoRead(() => function(parameter1, parameter2, parameter3, parameter4));
 
         /// <summary>
         /// <para>Executes action in read access mode.</para>
@@ -211,7 +211,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter4"><para>The forth parameter</para><para>Чертвёртый параметр.</para></param>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void ExecuteReadOperation<TParam1, TParam2, TParam3, TParam4>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Action<TParam1, TParam2, TParam3, TParam4> action) => synchronization.ExecuteReadOperation(() => action(parameter1, parameter2, parameter3, parameter4));
+        public static void DoRead<TParam1, TParam2, TParam3, TParam4>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Action<TParam1, TParam2, TParam3, TParam4> action) => synchronization.DoRead(() => action(parameter1, parameter2, parameter3, parameter4));
 
         /// <summary>
         /// <para>Executes a function in write access mode and returns the function's result.</para>
@@ -230,7 +230,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static TResult ExecuteWriteOperation<TResult, TParam1, TParam2, TParam3, TParam4>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Func<TParam1, TParam2, TParam3, TParam4, TResult> function) => synchronization.ExecuteWriteOperation(() => function(parameter1, parameter2, parameter3, parameter4));
+        public static TResult DoWrite<TResult, TParam1, TParam2, TParam3, TParam4>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Func<TParam1, TParam2, TParam3, TParam4, TResult> function) => synchronization.DoWrite(() => function(parameter1, parameter2, parameter3, parameter4));
 
         /// <summary>
         /// <para>Executes action in write access mode.</para>
@@ -247,6 +247,6 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter4"><para>The forth parameter</para><para>Чертвёртый параметр.</para></param>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void ExecuteWriteOperation<TParam1, TParam2, TParam3, TParam4>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Action<TParam1, TParam2, TParam3, TParam4> action) => synchronization.ExecuteWriteOperation(() => action(parameter1, parameter2, parameter3, parameter4));
+        public static void DoWrite<TParam1, TParam2, TParam3, TParam4>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Action<TParam1, TParam2, TParam3, TParam4> action) => synchronization.DoWrite(() => action(parameter1, parameter2, parameter3, parameter4));
     }
 }
