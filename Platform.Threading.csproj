@@ -31,6 +31,7 @@ Source link enabled.
 Travis CI disabled.
 GitHub Actions enabled.
 Performance optimizations, issues fix.</PackageReleaseNotes>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
