@@ -45,22 +45,22 @@ references:
   isSpec: "True"
   fullName: Platform.Threading.ConcurrentQueueExtensions.AwaitOne
   nameWithType: ConcurrentQueueExtensions.AwaitOne
-- uid: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task},System.Action)
-  name: EnqueueAsRunnedTask(ConcurrentQueue<Task>, Action)
-  href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_EnqueueAsRunnedTask_System_Collections_Concurrent_ConcurrentQueue_System_Threading_Tasks_Task__System_Action_
-  commentId: M:Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task},System.Action)
-  name.vb: EnqueueAsRunnedTask(ConcurrentQueue(Of Task), Action)
-  fullName: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask(System.Collections.Concurrent.ConcurrentQueue<System.Threading.Tasks.Task>, System.Action)
-  fullName.vb: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask(System.Collections.Concurrent.ConcurrentQueue(Of System.Threading.Tasks.Task), System.Action)
-  nameWithType: ConcurrentQueueExtensions.EnqueueAsRunnedTask(ConcurrentQueue<Task>, Action)
-  nameWithType.vb: ConcurrentQueueExtensions.EnqueueAsRunnedTask(ConcurrentQueue(Of Task), Action)
-- uid: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask*
-  name: EnqueueAsRunnedTask
-  href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_EnqueueAsRunnedTask_
-  commentId: Overload:Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask
+- uid: Platform.Threading.ConcurrentQueueExtensions.RunAndPush(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task},System.Action)
+  name: RunAndPush(ConcurrentQueue<Task>, Action)
+  href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_RunAndPush_System_Collections_Concurrent_ConcurrentQueue_System_Threading_Tasks_Task__System_Action_
+  commentId: M:Platform.Threading.ConcurrentQueueExtensions.RunAndPush(System.Collections.Concurrent.ConcurrentQueue{System.Threading.Tasks.Task},System.Action)
+  name.vb: RunAndPush(ConcurrentQueue(Of Task), Action)
+  fullName: Platform.Threading.ConcurrentQueueExtensions.RunAndPush(System.Collections.Concurrent.ConcurrentQueue<System.Threading.Tasks.Task>, System.Action)
+  fullName.vb: Platform.Threading.ConcurrentQueueExtensions.RunAndPush(System.Collections.Concurrent.ConcurrentQueue(Of System.Threading.Tasks.Task), System.Action)
+  nameWithType: ConcurrentQueueExtensions.RunAndPush(ConcurrentQueue<Task>, Action)
+  nameWithType.vb: ConcurrentQueueExtensions.RunAndPush(ConcurrentQueue(Of Task), Action)
+- uid: Platform.Threading.ConcurrentQueueExtensions.RunAndPush*
+  name: RunAndPush
+  href: api/Platform.Threading.ConcurrentQueueExtensions.html#Platform_Threading_ConcurrentQueueExtensions_RunAndPush_
+  commentId: Overload:Platform.Threading.ConcurrentQueueExtensions.RunAndPush
   isSpec: "True"
-  fullName: Platform.Threading.ConcurrentQueueExtensions.EnqueueAsRunnedTask
-  nameWithType: ConcurrentQueueExtensions.EnqueueAsRunnedTask
+  fullName: Platform.Threading.ConcurrentQueueExtensions.RunAndPush
+  nameWithType: ConcurrentQueueExtensions.RunAndPush
 - uid: Platform.Threading.Synchronization
   name: Platform.Threading.Synchronization
   href: api/Platform.Threading.Synchronization.html
