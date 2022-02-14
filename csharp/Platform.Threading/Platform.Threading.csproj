@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Threading Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Threading</AssemblyTitle>
-    <VersionPrefix>0.3.0</VersionPrefix>
+    <VersionPrefix>0.4.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net5;net6</TargetFrameworks>
     <AssemblyName>Platform.Threading</AssemblyName>
@@ -24,8 +24,12 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>.NET 5 support is added.
-Platform.Collections dependency updated from 0.2.1 to 0.3.0.</PackageReleaseNotes>
+    <PackageReleaseNotes>ISynchronization.ExecuteReadOperation is renamed to DoRead.
+ISynchronization.ExecuteWriteOperation is renamed to DoWrite.
+ConcurrentQueueExtensions.EnqueueAsRunnedTask is renamed to RunAndPush.
+.NET 6 support is added.
+Platform.Collections dependency is updated from 0.3.0 to 0.3.2.
+Microsoft.SourceLink.GitHub dependency is updated from 1.0.0 to 1.1.1.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
@@ -37,7 +41,7 @@ Platform.Collections dependency updated from 0.2.1 to 0.3.0.</PackageReleaseNote
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Collections" Version="0.3.0" />
+    <PackageReference Include="Platform.Collections" Version="0.3.2" />
   </ItemGroup>
 
 </Project>
