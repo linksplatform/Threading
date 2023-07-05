@@ -42,7 +42,7 @@ Performance optimizations, issues fix.</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Collections" Version="0.3.2" />
+    <PackageReference Include="Platform.Collections" Version="0.4.0" />
   </ItemGroup>
 
 </Project>
