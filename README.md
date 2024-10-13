@@ -1,4 +1,4 @@
-[![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.Threading)](https://www.nuget.org/packages/Platform.Threading)
+[![NuGet Version and Downloads count](https://img.shields.io/nuget/v/Platform.Threading?label=nuget&style=flat)](https://www.nuget.org/packages/Platform.Threading)
 [![Actions Status](https://github.com/linksplatform/Threading/workflows/CD/badge.svg)](https://github.com/linksplatform/Threading/actions?workflow=CD)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6a2021cabd0a4a60822ec5fdb2f63c0e)](https://app.codacy.com/gh/linksplatform/Threading?utm_source=github.com&utm_medium=referral&utm_content=linksplatform/Threading&utm_campaign=Badge_Grade_Settings)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/threading/badge)](https://www.codefactor.io/repository/github/linksplatform/threading)
