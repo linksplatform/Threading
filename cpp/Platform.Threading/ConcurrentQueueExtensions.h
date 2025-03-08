@@ -1,23 +1,38 @@
 ﻿namespace Platform::Threading
 {
-    class ConcurrentQueueExtensions
+    template<typename R>
+    auto AwaitAll(Synchronization::Sync<std::queue<std::future<R>>>& unsafe_queue)
     {
-        public: static async Task AwaitAll(ConcurrentQueue<Task> queue)
+        auto lambda = [&unsafe_queue]
         {
-            foreach (auto item in queue.DequeueAll())
+            auto locked_queue = *unsafe_queue;
+            auto& queue = *locked_queue;
+            while (!queue.empty())
             {
-                await item.ConfigureAwait(continueOnCapturedContext: false);
+                auto& item = queue.front();
+                item.wait();
+                queue.pop();
             }
-        }
+        };
+        return std::async(lambda);
+    }
 
-        public: static async Task AwaitOne(ConcurrentQueue<Task> queue)
+    template<typename R>
+    auto AwaitOne(Synchronization::Sync<std::queue<std::future<R>>>& unsafe_queue)
+    {
+        auto lambda = [&unsafe_queue]
         {
-            if (queue.TryDequeue(out Task item))
+            auto locked_queue = *unsafe_queue;
+            auto& queue = *locked_queue;
+            if (!queue.empty())
             {
-                await item.ConfigureAwait(continueOnCapturedContext: false);
+                auto& item = queue.front();
+                item.wait();
+                queue.pop();
             }
-        }
+        };
+        return std::async(lambda);
+    }
 
-        public: static void EnqueueAsRunnedTask(ConcurrentQueue<Task> queue, std::function<void()> action) { queue.Enqueue(Task.Run(action)); }
-    };
+    // public: static void EnqueueAsRunnedTask(ConcurrentQueue<Task> queue, std::function<void()> action) { queue.Enqueue(Task.Run(action)); }
 }
