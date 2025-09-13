@@ -1,14 +1,64 @@
-﻿namespace Platform::Threading::Synchronization
+#pragma once
+
+#include <functional>
+
+namespace Platform::Threading::Synchronization
 {
+    /// <summary>
+    /// <para>Represents a synchronization object that supports read and write operations.</para>
+    /// <para>Представляет объект синхронизации с поддержкой операций чтения и записи.</para>
+    /// </summary>
     class ISynchronization
     {
     public:
-        virtual void ExecuteReadOperation(std::function<void()> action) = 0;
+        virtual ~ISynchronization() = default;
 
-        TResult ExecuteReadOperation<TResult>(std::function<TResult()> function);
+        /// <summary>
+        /// <para>Executes action in read access mode.</para>
+        /// <para>Выполняет действие в режиме доступа для чтения.</para>
+        /// </summary>
+        /// <param name="action"><para>The action.</para><para>Действие.</para></param>
+        virtual void DoRead(std::function<void()> action) = 0;
 
-        virtual void ExecuteWriteOperation(std::function<void()> action) = 0;
+        /// <summary>
+        /// <para>Executes a function in read access mode and returns the function's result.</para>
+        /// <para>Выполняет функцию в режиме доступа для чтения и возвращает полученный из неё результат.</para>
+        /// </summary>
+        /// <typeparam name="TResult"><para>Type of function's result.</para><para>Тип результата функции.</para></typeparam>
+        /// <param name="function"><para>The function.</para><para>Функция.</para></param>
+        /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
+        template<typename TResult>
+        TResult DoRead(std::function<TResult()> function)
+        {
+            TResult result;
+            DoRead([&function, &result]() {
+                result = function();
+            });
+            return result;
+        }
 
-        TResult ExecuteWriteOperation<TResult>(std::function<TResult()> function);
+        /// <summary>
+        /// <para>Executes action in write access mode.</para>
+        /// <para>Выполняет действие в режиме доступа для записи.</para>
+        /// </summary>
+        /// <param name="action"><para>The action.</para><para>Действие.</para></param>
+        virtual void DoWrite(std::function<void()> action) = 0;
+
+        /// <summary>
+        /// <para>Executes a function in write access mode and returns the function's result.</para>
+        /// <para>Выполняет функцию в режиме доступа для записи и возвращает полученный из неё результат.</para>
+        /// </summary>
+        /// <typeparam name="TResult"><para>Type of function's result.</para><para>Тип результата функции.</para></typeparam>
+        /// <param name="function"><para>The function.</para><para>Функция.</para></param>
+        /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
+        template<typename TResult>
+        TResult DoWrite(std::function<TResult()> function)
+        {
+            TResult result;
+            DoWrite([&function, &result]() {
+                result = function();
+            });
+            return result;
+        }
     };
 }

@@ -1,59 +1,61 @@
-﻿namespace Platform::Threading::Synchronization
+#pragma once
+
+#include "ISynchronization.h"
+#include <shared_mutex>
+#include <functional>
+
+namespace Platform::Threading::Synchronization
 {
+    /// <summary>
+    /// <para>Implementation of ISynchronization based on std::shared_mutex.</para>
+    /// <para>Реализация ISynchronization на основе std::shared_mutex.</para>
+    /// </summary>
     class ReaderWriterLockSynchronization : public ISynchronization
     {
-        private: readonly ReaderWriterLockSlim _rwLock = ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);
+    private:
+        mutable std::shared_mutex rwLock_;
 
-        public: void ExecuteReadOperation(std::function<void()> action)
+    public:
+        /// <inheritdoc/>
+        void DoRead(std::function<void()> action) override
         {
-            _rwLock.EnterReadLock();
-            try
-            {
-                action();
-            }
-            finally
-            {
-                _rwLock.ExitReadLock();
-            }
+            std::shared_lock<std::shared_mutex> lock(rwLock_);
+            action();
         }
 
-        public: TResult ExecuteReadOperation<TResult>(std::function<TResult()> function)
+        /// <summary>
+        /// <para>Executes a function in read access mode and returns the function's result.</para>
+        /// <para>Выполняет функцию в режиме доступа для чтения и возвращает полученный из неё результат.</para>
+        /// </summary>
+        /// <typeparam name="TResult"><para>Type of function's result.</para><para>Тип результата функции.</para></typeparam>
+        /// <param name="function"><para>The function.</para><para>Функция.</para></param>
+        /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
+        template<typename TResult>
+        TResult DoRead(std::function<TResult()> function)
         {
-            _rwLock.EnterReadLock();
-            try
-            {
-                return function();
-            }
-            finally
-            {
-                _rwLock.ExitReadLock();
-            }
+            std::shared_lock<std::shared_mutex> lock(rwLock_);
+            return function();
         }
 
-        public: void ExecuteWriteOperation(std::function<void()> action)
+        /// <inheritdoc/>
+        void DoWrite(std::function<void()> action) override
         {
-            _rwLock.EnterWriteLock();
-            try
-            {
-                action();
-            }
-            finally
-            {
-                _rwLock.ExitWriteLock();
-            }
+            std::unique_lock<std::shared_mutex> lock(rwLock_);
+            action();
         }
 
-        public: TResult ExecuteWriteOperation<TResult>(std::function<TResult()> function)
+        /// <summary>
+        /// <para>Executes a function in write access mode and returns the function's result.</para>
+        /// <para>Выполняет функцию в режиме доступа для записи и возвращает полученный из неё результат.</para>
+        /// </summary>
+        /// <typeparam name="TResult"><para>Type of function's result.</para><para>Тип результата функции.</para></typeparam>
+        /// <param name="function"><para>The function.</para><para>Функция.</para></param>
+        /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
+        template<typename TResult>
+        TResult DoWrite(std::function<TResult()> function)
         {
-            _rwLock.EnterWriteLock();
-            try
-            {
-                return function();
-            }
-            finally
-            {
-                _rwLock.ExitWriteLock();
-            }
+            std::unique_lock<std::shared_mutex> lock(rwLock_);
+            return function();
         }
     };
 }

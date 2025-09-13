@@ -1,37 +1,115 @@
-﻿namespace Platform::Threading::Synchronization
+#pragma once
+
+#include "ISynchronization.h"
+#include <functional>
+
+namespace Platform::Threading::Synchronization
 {
+    /// <summary>
+    /// <para>Contains extension methods for the ISynchronization interface.</para>
+    /// <para>Содержит методы расширения для интерфейса ISynchronization.</para>
+    /// </summary>
     class ISynchronizationExtensions
     {
-        public: static TResult ExecuteReadOperation<TResult, TParam>(ISynchronization &synchronization, TParam parameter, Func<TParam, TResult> function) { return synchronization.ExecuteReadOperation([&]()-> auto { return function(parameter); } });
+    public:
+        // Single parameter overloads
+        template<typename TResult, typename TParam>
+        static TResult DoRead(ISynchronization& synchronization, TParam parameter, std::function<TResult(TParam)> function)
+        {
+            return synchronization.DoRead<TResult>([&]() { return function(parameter); });
+        }
 
-        public: template <typename TParam> static void ExecuteReadOperation(ISynchronization &synchronization, TParam parameter, std::function<void(TParam)> action) { synchronization.ExecuteReadOperation([&]()-> auto { return action(parameter); }); }
+        template<typename TParam>
+        static void DoRead(ISynchronization& synchronization, TParam parameter, std::function<void(TParam)> action)
+        {
+            synchronization.DoRead([&]() { action(parameter); });
+        }
 
-        public: static TResult ExecuteWriteOperation<TResult, TParam>(ISynchronization &synchronization, TParam parameter, Func<TParam, TResult> function) { return synchronization.ExecuteWriteOperation([&]()-> auto { return function(parameter); } });
+        template<typename TResult, typename TParam>
+        static TResult DoWrite(ISynchronization& synchronization, TParam parameter, std::function<TResult(TParam)> function)
+        {
+            return synchronization.DoWrite<TResult>([&]() { return function(parameter); });
+        }
 
-        public: template <typename TParam> static void ExecuteWriteOperation(ISynchronization &synchronization, TParam parameter, std::function<void(TParam)> action) { synchronization.ExecuteWriteOperation([&]()-> auto { return action(parameter); }); }
+        template<typename TParam>
+        static void DoWrite(ISynchronization& synchronization, TParam parameter, std::function<void(TParam)> action)
+        {
+            synchronization.DoWrite([&]() { action(parameter); });
+        }
 
-        public: static TResult ExecuteReadOperation<TResult, TParam1, TParam2>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, Func<TParam1, TParam2, TResult> function) { return synchronization.ExecuteReadOperation([&]()-> auto { return function(parameter1, parameter2); } });
+        // Two parameter overloads
+        template<typename TResult, typename TParam1, typename TParam2>
+        static TResult DoRead(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, std::function<TResult(TParam1, TParam2)> function)
+        {
+            return synchronization.DoRead<TResult>([&]() { return function(parameter1, parameter2); });
+        }
 
-        public: static void ExecuteReadOperation<TParam1, TParam2>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, std::function<void(TParam1, TParam2)> action) { return synchronization.ExecuteReadOperation([&]()-> auto { return action(parameter1, parameter2); } });
+        template<typename TParam1, typename TParam2>
+        static void DoRead(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, std::function<void(TParam1, TParam2)> action)
+        {
+            synchronization.DoRead([&]() { action(parameter1, parameter2); });
+        }
 
-        public: static TResult ExecuteWriteOperation<TResult, TParam1, TParam2>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, Func<TParam1, TParam2, TResult> function) { return synchronization.ExecuteWriteOperation([&]()-> auto { return function(parameter1, parameter2); } });
+        template<typename TResult, typename TParam1, typename TParam2>
+        static TResult DoWrite(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, std::function<TResult(TParam1, TParam2)> function)
+        {
+            return synchronization.DoWrite<TResult>([&]() { return function(parameter1, parameter2); });
+        }
 
-        public: static void ExecuteWriteOperation<TParam1, TParam2>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, std::function<void(TParam1, TParam2)> action) { return synchronization.ExecuteWriteOperation([&]()-> auto { return action(parameter1, parameter2); } });
+        template<typename TParam1, typename TParam2>
+        static void DoWrite(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, std::function<void(TParam1, TParam2)> action)
+        {
+            synchronization.DoWrite([&]() { action(parameter1, parameter2); });
+        }
 
-        public: static TResult ExecuteReadOperation<TResult, TParam1, TParam2, TParam3>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, Func<TParam1, TParam2, TParam3, TResult> function) { return synchronization.ExecuteReadOperation([&]()-> auto { return function(parameter1, parameter2, parameter3); } });
+        // Three parameter overloads
+        template<typename TResult, typename TParam1, typename TParam2, typename TParam3>
+        static TResult DoRead(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, std::function<TResult(TParam1, TParam2, TParam3)> function)
+        {
+            return synchronization.DoRead<TResult>([&]() { return function(parameter1, parameter2, parameter3); });
+        }
 
-        public: static void ExecuteReadOperation<TParam1, TParam2, TParam3>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, std::function<void(TParam1, TParam2, TParam3)> action) { return synchronization.ExecuteReadOperation([&]()-> auto { return action(parameter1, parameter2, parameter3); } });
+        template<typename TParam1, typename TParam2, typename TParam3>
+        static void DoRead(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, std::function<void(TParam1, TParam2, TParam3)> action)
+        {
+            synchronization.DoRead([&]() { action(parameter1, parameter2, parameter3); });
+        }
 
-        public: static TResult ExecuteWriteOperation<TResult, TParam1, TParam2, TParam3>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, Func<TParam1, TParam2, TParam3, TResult> function) { return synchronization.ExecuteWriteOperation([&]()-> auto { return function(parameter1, parameter2, parameter3); } });
+        template<typename TResult, typename TParam1, typename TParam2, typename TParam3>
+        static TResult DoWrite(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, std::function<TResult(TParam1, TParam2, TParam3)> function)
+        {
+            return synchronization.DoWrite<TResult>([&]() { return function(parameter1, parameter2, parameter3); });
+        }
 
-        public: static void ExecuteWriteOperation<TParam1, TParam2, TParam3>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, std::function<void(TParam1, TParam2, TParam3)> action) { return synchronization.ExecuteWriteOperation([&]()-> auto { return action(parameter1, parameter2, parameter3); } });
+        template<typename TParam1, typename TParam2, typename TParam3>
+        static void DoWrite(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, std::function<void(TParam1, TParam2, TParam3)> action)
+        {
+            synchronization.DoWrite([&]() { action(parameter1, parameter2, parameter3); });
+        }
 
-        public: static TResult ExecuteReadOperation<TResult, TParam1, TParam2, TParam3, TParam4>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Func<TParam1, TParam2, TParam3, TParam4, TResult> function) { return synchronization.ExecuteReadOperation([&]()-> auto { return function(parameter1, parameter2, parameter3, parameter4); } });
+        // Four parameter overloads
+        template<typename TResult, typename TParam1, typename TParam2, typename TParam3, typename TParam4>
+        static TResult DoRead(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, std::function<TResult(TParam1, TParam2, TParam3, TParam4)> function)
+        {
+            return synchronization.DoRead<TResult>([&]() { return function(parameter1, parameter2, parameter3, parameter4); });
+        }
 
-        public: static void ExecuteReadOperation<TParam1, TParam2, TParam3, TParam4>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, std::function<void(TParam1, TParam2, TParam3, TParam4)> action) { return synchronization.ExecuteReadOperation([&]()-> auto { return action(parameter1, parameter2, parameter3, parameter4); } });
+        template<typename TParam1, typename TParam2, typename TParam3, typename TParam4>
+        static void DoRead(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, std::function<void(TParam1, TParam2, TParam3, TParam4)> action)
+        {
+            synchronization.DoRead([&]() { action(parameter1, parameter2, parameter3, parameter4); });
+        }
 
-        public: static TResult ExecuteWriteOperation<TResult, TParam1, TParam2, TParam3, TParam4>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Func<TParam1, TParam2, TParam3, TParam4, TResult> function) { return synchronization.ExecuteWriteOperation([&]()-> auto { return function(parameter1, parameter2, parameter3, parameter4); } });
+        template<typename TResult, typename TParam1, typename TParam2, typename TParam3, typename TParam4>
+        static TResult DoWrite(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, std::function<TResult(TParam1, TParam2, TParam3, TParam4)> function)
+        {
+            return synchronization.DoWrite<TResult>([&]() { return function(parameter1, parameter2, parameter3, parameter4); });
+        }
 
-        public: static void ExecuteWriteOperation<TParam1, TParam2, TParam3, TParam4>(ISynchronization &synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, std::function<void(TParam1, TParam2, TParam3, TParam4)> action) { return synchronization.ExecuteWriteOperation([&]()-> auto { return action(parameter1, parameter2, parameter3, parameter4); } });
+        template<typename TParam1, typename TParam2, typename TParam3, typename TParam4>
+        static void DoWrite(ISynchronization& synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, std::function<void(TParam1, TParam2, TParam3, TParam4)> action)
+        {
+            synchronization.DoWrite([&]() { action(parameter1, parameter2, parameter3, parameter4); });
+        }
     };
 }
