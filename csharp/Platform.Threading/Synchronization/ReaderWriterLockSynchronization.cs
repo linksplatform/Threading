@@ -12,7 +12,6 @@ namespace Platform.Threading.Synchronization
     {
         private readonly ReaderWriterLockSlim _rwLock = new ReaderWriterLockSlim(LockRecursionPolicy.SupportsRecursion);
 
-        /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.DoRead(System.Action)"]/*'/>
         /// <inheritdoc/>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void DoRead(Action action)
@@ -28,7 +27,6 @@ namespace Platform.Threading.Synchronization
             }
         }
 
-        /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.DoRead``1(System.Func{``0})"]/*'/>
         /// <inheritdoc/>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public TResult DoRead<TResult>(Func<TResult> function)
@@ -44,7 +42,6 @@ namespace Platform.Threading.Synchronization
             }
         }
 
-        /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.DoWrite(System.Action)"]/*'/>
         /// <inheritdoc/>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void DoWrite(Action action)
@@ -60,7 +57,6 @@ namespace Platform.Threading.Synchronization
             }
         }
 
-        /// <include file='bin\Release\netstandard2.0\Platform.Threading.xml' path='doc/members/member[@name="M:Platform.Threading.Synchronization.ISynchronization.DoWrite``1(System.Func{``0})"]/*'/>
         /// <inheritdoc/>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public TResult DoWrite<TResult>(Func<TResult> function)
