@@ -190,7 +190,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter1"><para>The first parameter</para><para>Первый параметр.</para></param>
         /// <param name="parameter2"><para>The second parameter</para><para>Второй параметр.</para></param>
         /// <param name="parameter3"><para>The third parameter</para><para>Третий параметр.</para></param>
-        /// <param name="parameter4"><para>The forth parameter</para><para>Чертвёртый параметр.</para></param>
+        /// <param name="parameter4"><para>The forth parameter</para><para>Четвёртый параметр.</para></param>
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -208,7 +208,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter1"><para>The first parameter</para><para>Первый параметр.</para></param>
         /// <param name="parameter2"><para>The second parameter</para><para>Второй параметр.</para></param>
         /// <param name="parameter3"><para>The third parameter</para><para>Третий параметр.</para></param>
-        /// <param name="parameter4"><para>The forth parameter</para><para>Чертвёртый параметр.</para></param>
+        /// <param name="parameter4"><para>The forth parameter</para><para>Четвёртый параметр.</para></param>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void DoRead<TParam1, TParam2, TParam3, TParam4>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Action<TParam1, TParam2, TParam3, TParam4> action) => synchronization.DoRead(() => action(parameter1, parameter2, parameter3, parameter4));
@@ -226,7 +226,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter1"><para>The first parameter</para><para>Первый параметр.</para></param>
         /// <param name="parameter2"><para>The second parameter</para><para>Второй параметр.</para></param>
         /// <param name="parameter3"><para>The third parameter</para><para>Третий параметр.</para></param>
-        /// <param name="parameter4"><para>The forth parameter</para><para>Чертвёртый параметр.</para></param>
+        /// <param name="parameter4"><para>The forth parameter</para><para>Четвёртый параметр.</para></param>
         /// <param name="function"><para>The function.</para><para>Функция.</para></param>
         /// <returns><para>The function's result.</para><para>Результат функции.</para></returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -244,7 +244,7 @@ namespace Platform.Threading.Synchronization
         /// <param name="parameter1"><para>The first parameter</para><para>Первый параметр.</para></param>
         /// <param name="parameter2"><para>The second parameter</para><para>Второй параметр.</para></param>
         /// <param name="parameter3"><para>The third parameter</para><para>Третий параметр.</para></param>
-        /// <param name="parameter4"><para>The forth parameter</para><para>Чертвёртый параметр.</para></param>
+        /// <param name="parameter4"><para>The forth parameter</para><para>Четвёртый параметр.</para></param>
         /// <param name="action"><para>The action.</para><para>Действие.</para></param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void DoWrite<TParam1, TParam2, TParam3, TParam4>(this ISynchronization synchronization, TParam1 parameter1, TParam2 parameter2, TParam3 parameter3, TParam4 parameter4, Action<TParam1, TParam2, TParam3, TParam4> action) => synchronization.DoWrite(() => action(parameter1, parameter2, parameter3, parameter4));
